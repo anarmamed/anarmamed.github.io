@@ -1,7 +1,16 @@
 @charset "UTF-8";
 /* Slider */
 .slick-loading .slick-list {
-  background: #ffffff url('ajax-loader.gif') center center no-repeat;
+  background: #fff url("./ajax-loader.gif") center center no-repeat;
+}
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url("./fonts/slick.eot");
+  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 /* Arrows */
 .slick-prev,
@@ -23,17 +32,15 @@
   border: none;
   outline: none;
 }
-.slick-prev:hover,
+.slick-prev:hover, .slick-prev:focus,
 .slick-next:hover,
-.slick-prev:focus,
 .slick-next:focus {
   outline: none;
   background: transparent;
   color: transparent;
 }
-.slick-prev:hover:before,
+.slick-prev:hover:before, .slick-prev:focus:before,
 .slick-next:hover:before,
-.slick-prev:focus:before,
 .slick-next:focus:before {
   opacity: 1;
 }
@@ -46,19 +53,12 @@
   font-family: "slick";
   font-size: 20px;
   line-height: 1;
-  color: #ffffff;
+  color: white;
   opacity: 0.75;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* Icons */
 }
-@font-face {
-  font-family: 'slick';
-  font-weight: normal;
-  font-style: normal;
-  src: url('fonts/slick.eot');
-  src: url('fonts/slick.eot?#iefix') format('embedded-opentype'), url('fonts/slick.woff') format('woff'), url('fonts/slick.ttf') format('truetype'), url('fonts/slick.svg#slick') format('svg');
-}
+
 .slick-prev {
   left: -25px;
 }
@@ -72,6 +72,7 @@
 [dir="rtl"] .slick-prev:before {
   content: "→";
 }
+
 .slick-next {
   right: -25px;
 }
@@ -85,10 +86,12 @@
 [dir="rtl"] .slick-next:before {
   content: "←";
 }
+
 /* Dots */
-.slick-dotted .slick-slider {
+.slick-dotted.slick-slider {
   margin-bottom: 30px;
 }
+
 .slick-dots {
   position: absolute;
   bottom: -25px;
@@ -121,12 +124,10 @@
   padding: 5px;
   cursor: pointer;
 }
-.slick-dots li button:hover,
-.slick-dots li button:focus {
+.slick-dots li button:hover, .slick-dots li button:focus {
   outline: none;
 }
-.slick-dots li button:hover:before,
-.slick-dots li button:focus:before {
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
   opacity: 1;
 }
 .slick-dots li button:before {
@@ -140,12 +141,14 @@
   font-size: 6px;
   line-height: 20px;
   text-align: center;
-  color: #000000;
+  color: black;
   opacity: 0.25;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before {
-  color: #000000;
+  color: black;
   opacity: 0.75;
 }
+
+/*# sourceMappingURL=slick-theme.css.map */

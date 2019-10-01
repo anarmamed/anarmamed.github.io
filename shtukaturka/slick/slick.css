@@ -13,6 +13,7 @@
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
 }
+
 .slick-list {
   position: relative;
   overflow: hidden;
@@ -27,6 +28,7 @@
   cursor: pointer;
   cursor: hand;
 }
+
 .slick-slider .slick-track,
 .slick-slider .slick-list {
   -webkit-transform: translate3d(0, 0, 0);
@@ -35,6 +37,7 @@
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+
 .slick-track {
   position: relative;
   left: 0;
@@ -43,8 +46,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-.slick-track:before,
-.slick-track:after {
+.slick-track:before, .slick-track:after {
   content: "";
   display: table;
 }
@@ -54,6 +56,7 @@
 .slick-loading .slick-track {
   visibility: hidden;
 }
+
 .slick-slide {
   float: left;
   height: 100%;
@@ -83,6 +86,9 @@
   height: auto;
   border: 1px solid transparent;
 }
+
 .slick-arrow.slick-hidden {
   display: none;
 }
+
+/*# sourceMappingURL=slick.css.map */
