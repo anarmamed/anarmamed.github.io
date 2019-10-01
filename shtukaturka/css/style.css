@@ -612,14 +612,13 @@ footer {
     min-height: auto;
   }
   .tour {
-    background: #ffffff;
+    background: #cccccc;
     background-size: cover;
   }
   .tour-title {
     text-align: center;
     font-size: 6rem;
-    color: #46b814;
-    font-style: bold;
+    color: #ffffff;
   }
   .tour-subtitle {
     text-align: center;
