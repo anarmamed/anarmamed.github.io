@@ -50,14 +50,16 @@
 	      				<div class= "col-lg-4 offset-lg-2 col-md-5 offset-md-1">
 	            		<div class="form wow fadeInRight" data-wow-delay="0.2s">
 	            			<h2 class="form-header">Для расчета точной стоимости <br> закажите <strong>выезд замерщика</strong> </h2>
-	                		<form class="form" action="mailer/smart.php" method="POST">
+
+	                		<form class="form" action="mailer/mail.php" method="POST">
 								<label for="input-name">Ваше имя</label>
 								<input class="form-input" name="user_name" required type="text">
 								<label for="phone">Номер телефона</label>
-								<input class="form-input" required id="phone" phone="user_phone" type="text">
+								<input class="form-input" required id="phone" name="user_phone" type="text">
 								<button class="form-btn button" type="submit">Отправить заявку</button>
 	                		</form>         
 	              		</div>
+
 	      				</div>
 	    			</div>
  				</div>   	
@@ -153,7 +155,7 @@
 				</div>
 			</div>
 			</div>
-		<img src="./img/problems-girl.png" alt="Проблемы и решения" class="problems-girl">
+		<img src="./img/shtukatur-sajt.png" alt="Проблемы и решения" class="problems-man">
 	</section>
 
 
@@ -419,7 +421,7 @@
 					</div>
 				</div>
 			</div>		
-		<div class="row">
+		<!-- <div class="row">
 		<div class="col-lg-5 offset-lg-4 col-md-6 offset-md-3 col-8 offset-2">
 			<div class="feedback-form">
 				<h3>Хотите так же?<br> Оставьте Ваши контактные данные</h3>
@@ -438,7 +440,7 @@
 				</form>
 			</div>
 		</div>
-		</div>
+		</div> -->
 		</div>
 	</section>
 
@@ -545,18 +547,18 @@
 	            		<p class="tour-subtitle">Вы можете приехать к нам на объект <br>и своими глазами увидеть<br> оборудование, материалы <br>и качество исполнения работ</p>
 	            	</div>
 	      			</div>
-	      				<div class= "col-lg-4 offset-lg-4 col-md-5 offset-md-0">
-	            		<div class="form tour-form">
-	            			<h2 class="form-header">Оставьте контактные данные для связи</h2>
-	                		<form class="form" action="#">
-								<label for="name-3">Ваше имя</label>
-								<input class="form-input" id="name-3" type="text">
-								<label for="phone-3">Номер телефона</label>
-								<input class="form-input" required id="phone" type="text">
-								<button class="form-btn button" type="submit">Записаться на просмотр</button>
-	                		</form>         
-	              		</div>
-	      				</div>
+	      				<!-- <div class= "col-lg-4 offset-lg-4 col-md-5 offset-md-0">
+	      					            		<div class="form tour-form">
+	      					            			<h2 class="form-header">Оставьте контактные данные для связи</h2>
+	      					                		<form class="form" action="#">
+	      												<label for="name-3">Ваше имя</label>
+	      												<input class="form-input" id="name-3" type="text">
+	      												<label for="phone-3">Номер телефона</label>
+	      												<input class="form-input" required id="phone" type="text">
+	      												<button class="form-btn button" type="submit">Записаться на просмотр</button>
+	      					                		</form>         
+	      					              		</div>
+	      				</div> -->
 	    	</div>
  		</div>   	
 	</section>
@@ -572,21 +574,21 @@
 					<div class="upsell-block">
 						<img src="img/upsell/1.jpg" alt="стяжка пола">
 						<p>Полусухая стяжка пола</p>
-						<button class="button popup-btn">Узнать цены</button>
+						
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="upsell-block">
 						<img src="img/upsell/2.jpg" alt="демонтаж">
 						<p>Демонтаж</p>
-						<button class="button popup-btn">Узнать цены</button>
+						
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="upsell-block">
 						<img src="img/upsell/3.jpg" alt="малярные работы">
 						<p>Малярные работы</p>
-						<button class="button popup-btn">Узнать цены</button>
+						
 					</div>
 				</div>
 			</div>
