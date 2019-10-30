@@ -1,0 +1,76 @@
+/* адаптив для сайта */
+
+@media (max-width: 767px)
+	html 
+		font-size: 7px
+	.top-nav
+		&_btn 
+			display: block
+		&_menu 
+			flex-direction: column
+			display: none
+			li 
+				line-height: 2
+				a 
+					&::after 
+						display: none
+	.left-sidebar
+		&_btn
+			display: block
+		&_menu 
+			display: none
+		&_object
+			display: none
+	.copy 
+		text-align: center
+		small
+			display: block
+			margin: 36px auto 
+	.footer 
+		&-contacts
+			text-align: left
+
+@media (min-width: 768px) and (max-width: 992px)
+	html 
+		font-size: 7px
+	.top-nav
+		&_btn 
+			display: block
+		&_menu 
+			display: none
+			li
+				display: inline-block
+				margin-right: 20px 
+				line-height: 2
+				a 
+					&::after 
+						display: none
+	.left-sidebar
+		&_btn
+			display: block
+		&_menu 
+			display: none
+		&_object
+			display: none
+		
+	.footer 
+		&-contacts
+			text-align: left			
+
+@media (min-width: 992px) and (max-width: 1199px)
+	.top-nav_menu
+		display: flex
+		justify-content: space-between
+		li 
+			margin: 10px
+	.left-sidebar
+		&_btn
+			display: block
+		&_menu 
+			display: none
+		&_object
+			display: none	
+		
+	.footer 
+		&-contacts
+			text-align: left			
