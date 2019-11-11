@@ -482,9 +482,7 @@ body {
 
 // секция Посмотрите
 .tour {
-	min-height: 55rem;
-	background: url(../img/tourbg.jpg) center center no-repeat / cover;
-	background-color: @light;
+	background-image: url(../img/tourbg.jpg);
 	&-title {
 		text-align: center;
 		margin-top: 4rem;
@@ -601,6 +599,7 @@ body {
 /* медиазапросы */
 
 @media (max-width: 768px) {
+
 	.main {
 		background-size: cover;
 		.header {
@@ -616,30 +615,30 @@ body {
 			font-size: 1.5rem;
 		}
 	}
+
 	.form {
 		&-header {
 			font-size: 1.5rem;
 		}
-	}
-	&-span {
-		padding: 1rem 1rem;
+		&-span {
+			padding: 1rem 1rem;
+		}
 	}
 
+	.tour {
+		background-image: url(../img/tourbg.jpg);
+		background-position: center right;
+		&-title {
+			
+			.bold();
+		}
+	}
 
 	.scheme {
 		background: #fff url(../img/schemebg.png) bottom right -15rem no-repeat;
 		background-size: 40rem;
 		&-list {
 			min-height: 50rem;
-		}
-	}
-
-	.tour {
-		background: @light url(../img/tourbg.jpg) center right no-repeat;
-		background-size: cover;
-		&-form { 
-			margin-top: 8rem;
-
 		}
 		&-title {
 			h2{
@@ -654,10 +653,12 @@ body {
 			}
 		}	
 	}
-}
+}	
+
 
 
 @media (max-width:576px) {
+
 	.main {
 		background-position: left;
 		.header {
@@ -713,14 +714,15 @@ body {
 
 	.tour {
 		background: #cccccc;
-		background-size: cover;
 		&-title {
 			text-align: center;
-		h2 {
-			font-size: 3rem;
-			color: @light;
-		}
-		
+			h2 {
+				font-size: 3rem;
+				color: @light;
+			}
+			p {
+				color: @light;
+			}
 		}
 		&-subtitle {
 			text-align: center;
@@ -739,4 +741,5 @@ body {
 			margin-left: 2rem;
 		}
 	}
+
 }

@@ -45,8 +45,8 @@
 							<form class="form" action="mailer/mail.php" method="POST">
 								<label for="user_name">Ваше имя</label>
 								<input class="form-input" name="user_name" required type="text">
-								<label for="phone">Номер телефона</label>
-								<input class="form-input" required id="phone" name="user_phone" type="text">
+								<label for="user_phone">Номер телефона</label>
+								<input class="form-input"  id="phone" name="user_phone" required type="phone">
 								<button class="form-btn button" type="submit">Отправить заявку</button>
 							</form>
 						</div>
@@ -322,10 +322,10 @@
 
 	<section class="gallery">
 		<div class="container">
-			<div class="section-header wow tada" data-wow-delay="0.5s">
+			<div class="section-header">
 				<h2>Наши работы</h2>
 			</div>
-			<div class="fotorama" data-width="100%" data-ratio="800/600" data-minwidth="300" data-maxwidth="1000"
+			<div class="fotorama" data-width="100%"  data-minwidth="300" data-maxwidth="1200"
 				data-minheight="200" data-maxheight="100%" data-loop="true" data-autoplay="3000" >
 				<img src="img/fotorama/1.jpg" alt="Фото обьекта">
 				<img src="img/fotorama/2.jpg" alt="Фото обьекта">
@@ -337,18 +337,6 @@
 		</div>
 	</section>
 
-	<!-- <div class="object">
-		<p> Объект: Харьков, ул.Ньютона 98<br>
-			Площадь: <strong>155м2</strong> <br>
-			Срок выполнения: <strong> 6 дней </strong><br>
-			Стоимость: <strong> 110 грн/м2 </strong><br>
-			Особенности: Штукатурка без глянцевания. <br>
-			Заказчик: Богдан
-		</p>
-		<div class="feedback-text">
-			<p> Ребята справились быстро, работа выполнена качетсвенно. Рекомендую!</p>
-		</div>
-	</div> -->
 	<section class="materials">
 		<div class="container">
 			<div class="section-header">
@@ -397,16 +385,16 @@
 	</section>
 
 	<section class="tour">
-		<div class="tour-container">
+		<div class="container">
 			<div class="row">
-				<div class=" col-lg-4 offset-lg-0 col-md-4 offset-md-3 col-10 offset-1">
+				<div class=" col-lg-4 offset-lg-0 col-md-5 offset-md-2 col-10 offset-1">
 					<div class="tour-title">
 						<h2>посмотрите <br>как мы работаем</h2>
 						<p class="tour-subtitle">Вы можете приехать к нам на объект <br>и своими глазами увидеть<br> оборудование,
 							материалы <br>и качество исполнения работ</p>
 					</div>
 				</div>
-				<div class="col-lg-3 offset-lg-4 col-md-4 offset-md-0 col-10 offset-1">
+				<div class="col-lg-4 offset-lg-4 col-md-5 offset-md-0 col-10 offset-1">
 					<div class="form tour-form wow fadeInRight" data-wow-delay="0.4s">
 						<h2 class="form-header">Оставьте контактные данные для связи</h2>
 						<form class="form" action="#">
@@ -502,11 +490,11 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
-	<script>
+	<!-- <script>
 		jQuery(function ($) {
 			$("#phone-2,#phone").mask("+38(999) 999-99-99");
 		});
-	</script>
+	</script> -->
 
 	<script>
 		new WOW().init();
@@ -522,7 +510,9 @@
 						event.preventDefault();
 						$('.popup').fadeOut();
 					});
+				});
 	</script>
+
 
 
 	<script type="text/javascript">
@@ -585,25 +575,24 @@
 		});
 	</script>
 
-	<!-- Start FastcallAgent code {literal} -->
-	<script type="text/javascript">
-		var fca_code = '93cdc4be2c9e4e25fd173858cf078252';
-		(function () {
-			var po = document.createElement('script');
-			po.type = 'text/javascript';
-			po.async = true;
-			po.charset = 'utf-8';
-			po.src = '//ua.cdn.fastcallagent.com/fca.min.js?_=' + Date.now();
-			var s = document.getElementsByTagName('script')[0];
-			if (s) {
-				s.parentNode.insertBefore(po, s);
-			} else {
-				s = document.getElementsByTagName('head')[0];
-				s.appendChild(po);
-			}
-		})();
-	</script>
-	<!-- {/literal} End FastcallAgent code -->
+	// <!-- Start FastcallAgent code {literal} -->
+	// <script type="text/javascript">
+	// 	var fca_code = '93cdc4be2c9e4e25fd173858cf078252';
+	// 	(function () {
+	// 		var po = document.createElement('script');
+	// 		po.type = 'text/javascript';
+	// 		po.async = true;
+	// 		po.charset = 'utf-8';
+	// 		po.src = '//ua.cdn.fastcallagent.com/fca.min.js?_=' + Date.now();
+	// 		var s = document.getElementsByTagName('script')[0];
+	// 		if (s) {
+	// 			s.parentNode.insertBefore(po, s);
+	// 		} else {
+	// 			s = document.getElementsByTagName('head')[0];
+	// 			s.appendChild(po);
+	// 		}
+	// 	})();
+	// </script>
+	// <!-- {/literal} End FastcallAgent code -->
 </body>
-
 </html>
