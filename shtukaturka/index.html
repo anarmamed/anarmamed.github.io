@@ -33,20 +33,21 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<div class="main-title wow fadeInLeft" data-wow-delay="0.2s">
-							<h1>Механизированная штукатурка в Харькове</h1>
+						<div class="main-title wow fadeIn" data-wow-delay="0.5s">
+							<h1>Машинная штукатурка <br> <span>в Харькове - 220/380v</span> </h1>
 							<p class="main-subtitle">Идеально ровные стены<br> в кратчайшие сроки! </p>
 							<span class="main-span">Стоимость работ <br>от <strong>100 </strong>грн за/м<sup>2</sup></span>
 						</div>
 					</div>
 					<div class="col-lg-4 offset-lg-2 col-md-5 offset-md-1">
-						<div class="form wow fadeInRight" data-wow-delay="0.2s">
-							<h2 class="form-header">Для расчета точной стоимости <br> закажите <strong>выезд замерщика</strong> </h2>
+						<div class="form wow fadeInRight" data-wow-delay="0.8s">
+							<h2 class="form-header"> <strong>Расчитаем точную стоимость для вашего объекта в течении 15
+									минут!</strong></h2>
 							<form class="form" action="mailer/mail.php" method="POST">
 								<label for="user-name">Ваше имя</label>
 								<input class="form-input" id="user-name" name="user_name" required type="text">
-								<label for="user-phone">Номер телефона</label>
-								<input class="form-input"  id="user-phone" name="user_phone" required type="tel">
+								<label for="phone">Номер телефона</label>
+								<input class="form-input" id="phone" name="user_phone" required type="text">
 								<button class="form-btn button" type="submit">Отправить заявку</button>
 							</form>
 						</div>
@@ -152,6 +153,41 @@
 				</div>
 			</div>
 		</div>
+	</section>
+
+	<section class="problems">
+		<div class="container">
+			<div class="section-header">
+				<h2>Мы развеем все сомнения!</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-5">
+					<div class="problems-list problems-list_bad wow fadeInUp" data-wow-delay="0.3s">
+						<h4>Какие могут быть опасения:</h4>
+						<ul>
+							<li>Сложности с закупкой,доставкой и разгрузкой материалов</li>
+							<li>Ремонт затянется на долго</li>
+							<li>Стены и углы будут неровными</li>
+							<li>Останется мусор и пыль после работы</li>
+							<li>Итоговая сумма к оплате будет выше, чем оговоренная в начале</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-5 offset-md-2">
+					<div class="problems-list problems-list_good wow fadeInUp" data-wow-delay="0.9s">
+						<h4>Какие решения мы предлагаем:</h4>
+						<ul>
+							<li>Закупка,доставка и подъем материала - бесплатно</li>
+							<li>Соблюдаем сроки указанные в договоре. Средняя продолжительность работ 5 дней</li>
+							<li>Высокая квалификация специалистов + cовременный точный интсрумент</li>
+							<li>Убираем и вывозим мусор с объекта</li>
+							<li> Смета расчитывается в самом начале сотрудничества, и не изменятся без согласия двух сторон</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img src="./img/shtukatur-sajt.png" alt="Проблемы и решения" class="problems-man">
 	</section>
 
 	<section class="all-inclusive">
@@ -285,58 +321,6 @@
 		</div>
 	</section>
 
-	<section class="problems">
-		<div class="container">
-			<div class="section-header">
-				<h2>Мы развеем все сомнения!</h2>
-			</div>
-			<div class="row">
-				<div class="col-md-5">
-					<div class="problems-list problems-list_bad wow fadeInUp" data-wow-delay="0.3s">
-						<h4>Какие могут быть опасения:</h4>
-						<ul>
-							<li>Сложности с закупкой,доставкой и разгрузкой материалов</li>
-							<li>Ремонт затянется на долго</li>
-							<li>Стены и углы будут неровными</li>
-							<li>Останется мусор и пыль после работы</li>
-							<li>Итоговая сумма к оплате будет выше, чем оговоренная в начале</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-5 offset-md-2">
-					<div class="problems-list problems-list_good wow fadeInUp" data-wow-delay="0.9s">
-						<h4>Какие решения мы предлагаем:</h4>
-						<ul>
-							<li>Закупка,доставка и подъем материала - бесплатно</li>
-							<li>Соблюдаем сроки указанные в договоре. Средняя продолжительность работ 5 дней</li>
-							<li>Высокая квалификация специалистов + cовременный точный интсрумент</li>
-							<li>Убираем и вывозим мусор с объекта</li>
-							<li> Смета расчитывается в самом начале сотрудничества, и не изменятся без согласия двух сторон</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<img src="./img/shtukatur-sajt.png" alt="Проблемы и решения" class="problems-man">
-	</section>
-
-	<section class="gallery">
-		<div class="container">
-			<div class="section-header">
-				<h2>Наши работы</h2>
-			</div>
-			<div class="fotorama" data-width="100%"  data-minwidth="300" data-maxwidth="1200"
-				data-minheight="200" data-maxheight="100%" data-loop="true" data-autoplay="3000" >
-				<img src="img/fotorama/1.jpg" alt="Фото обьекта">
-				<img src="img/fotorama/2.jpg" alt="Фото обьекта">
-				<img src="img/fotorama/3.jpg" alt="Фото обьекта">
-				<img src="img/fotorama/4.jpg" alt="Фото обьекта">
-				<img src="img/fotorama/5.jpg" alt="Фото обьекта">
-				<img src="img/fotorama/6.jpg" alt="Фото обьекта">
-			</div>
-		</div>
-	</section>
-
 	<section class="materials">
 		<div class="container">
 			<div class="section-header">
@@ -384,25 +368,96 @@
 		</div>
 	</section>
 
-	<section class="tour">
+
+	<section class="feedback">
 		<div class="container">
-			<div class="row">
-				<div class=" col-lg-4 offset-lg-0 col-md-5 offset-md-2 col-10 offset-1">
-					<div class="tour-title">
-						<h2>посмотрите <br>как мы работаем</h2>
-						<p class="tour-subtitle">Вы можете приехать к нам на объект <br>и своими глазами увидеть<br> оборудование,
-							материалы <br>и качество исполнения работ</p>
+			<div class="section-header">
+				<h2>Наши работы и отзывы клиентов</h2>
+			</div>
+			<div class="feedback-slider">
+				<div class="feedback-slider_item">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="fotorama" data-nav="thumbs">
+								<img src="img/fotorama/1.jpg" alt="Фото обьекта">
+								<img src="img/fotorama/2.jpg" alt="Фото обьекта">
+								<img src="img/fotorama/3.jpg" alt="Фото обьекта">
+								<img src="img/fotorama/4.jpg" alt="Фото обьекта">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="description">
+								<p><strong> Объект:</strong>г.Харьков, ул. Ньютона 97 <br>
+									<strong>Площадь:</strong> 120 м2 <br>
+									<strong>Срок выполнения:</strong> 6 дней <br>
+									<strong> Стоимость:</strong> 9500 грн <br>
+									<strong>Особенности:</strong> Штукатурка без глянцевания</p>
+								</div>
+							
+							<div class="user"> <p><strong>Заказчик:</strong> Богдан <br></p>
+								<blockquote>"Ребята справились быстро, ровностью стен доволен. Рекомендую!"</blockquote>
+							</div>
+					
 					</div>
 				</div>
-				<div class="col-lg-4 offset-lg-4 col-md-5 offset-md-0 col-10 offset-1">
-					<div class="form tour-form wow fadeInRight" data-wow-delay="0.4s">
-						<h2 class="form-header">Оставьте контактные данные для связи</h2>
+			</div>
+			<div class="feedback-slider_item">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="fotorama" data-nav="thumbs">
+							<img src="img/fotorama/5.jpg" alt="Фото обьекта">
+							<img src="img/fotorama/6.jpg" alt="Фото обьекта">
+							<img src="img/fotorama/2.jpg" alt="Фото обьекта">
+							<img src="img/fotorama/4.jpg" alt="Фото обьекта">
+						</div>
+					</div>
+					<div class="col-md-6">
+							<div class="description">
+									<p><strong> Объект: </strong>г.Харьков, Московский проспект 296 <br>
+										<strong>Площадь:</strong> 160 м2 <br>
+										<strong>Срок выполнения:</strong> 10 дней <br>
+										<strong> Стоимость:</strong> 14500 грн <br>
+										<strong>Особенности:</strong>Средний слой 4 см</p>
+									</div>
+								
+								<div class="user"> <p><strong>Заказчик:</strong> Юлия <br></p>
+									<blockquote>"Ни о чем не беспокоилась. Мастера доставили все материалы и выполнили работу очень качественно. Спасибо!"</blockquote>
+								</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		</div>
+	</section>
+
+
+
+	<section class="tour">
+		<div class="container">
+			<div class="tour-header">
+				<h2>посмотрите как мы работаем</h2>
+			</div>
+			<div class="row">
+				<div class=" col-lg-6 offset-lg-0 col-md-5 offset-md-2 col-10 offset-1">
+					<div class="tour-text">
+						<p>Вы можете приехать к нам на объект и своими глазами увидеть оборудование,
+							материалы и качество исполнения работ. <br>
+							<br>
+							Оставьте заявку и мы подберем для Вас ближайшее место и удобное время!
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4 offset-lg-2 col-md-5 offset-md-0 col-10 offset-1">
+					<div class="form tour-form wow fadeIn" data-wow-delay="0.5s">
+						<h2 class="form-header">Записаться на просмотр</h2>
 						<form class="form" action="#">
 							<label for="name-3">Ваше имя</label>
-							<input class="form-input" id="name-3" type="text">
+							<input class="form-input" id="name-3" required type="text">
 							<label for="phone-3">Номер телефона</label>
-							<input class="form-input" required id="phone-3" type="tel">
-							<button class="form-btn button" type="submit">Записаться на просмотр</button>
+							<input class="form-input" required id="phone-3" required type="text">
+							<button class="form-btn button" type="submit">Отправить</button>
 						</form>
 					</div>
 				</div>
@@ -414,7 +469,7 @@
 		<div class="container">
 			<div class="section-header">
 				<h3>Дополнительные услуги</h3>
-				<p>Помимо штукатурных работ, Вы можете заказать у нас следующие услуги:</p>
+				<p>Помимо штукатурных работ, у нас можно заказать следующие услуги</p>
 			</div>
 			<div class="row">
 				<div class=" col-lg-4  col-md-4 col-12">
@@ -456,7 +511,7 @@
 				</div>
 				<div class="col-md-3 ">
 					<div class="footer-copirate">
-						<p>Mechanizer-shtukatur.ua (c) 2019</p>
+						<p>Mechanizer-plustering.com.ua (c) 2019</p>
 					</div>
 				</div>
 			</div>
@@ -473,10 +528,10 @@
 				<div class="form">
 					<form action="#">
 						<label for="name-5">Ваше имя</label>
-						<input class="form-input" id="name-5" type="text">
+						<input class="form-input" id="name-5" required type="text">
 						<label for="phone-5">Номер телефона</label>
-						<input class="form-input" id="phone-5" type="tel">
-						<button class="form-btn button" type="submit">Отправить заявку</button>
+						<input class="form-input" id="phone-5" required type="text">
+						<button class="form-btn button" type="submit">Отправить</button>
 					</form>
 				</div>
 			</div>
@@ -490,11 +545,12 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
-	<!-- <script>
+
+	<script>
 		jQuery(function ($) {
-			$("#phone-2,#phone").mask("+38(999) 999-99-99");
+			$("#phone, #phone-2, #phone-5, #phone-3").mask("+38(999)-99-99-999");
 		});
-	</script> -->
+	</script>
 
 	<script>
 		new WOW().init();
@@ -502,15 +558,15 @@
 
 	<script type="text/javascript">
 		$(document).ready(function () {
-					$('.popup-btn').on('click', function (event) {
-						event.preventDefault();
-						$('.popup').fadeIn();
-					});
-					$('.popup-close').on('click', function (event) {
-						event.preventDefault();
-						$('.popup').fadeOut();
-					});
-				});
+			$('.popup-btn').on('click', function (event) {
+				event.preventDefault();
+				$('.popup').fadeIn();
+			});
+			$('.popup-close').on('click', function (event) {
+				event.preventDefault();
+				$('.popup').fadeOut();
+			});
+		});
 	</script>
 
 
@@ -518,6 +574,14 @@
 	<script type="text/javascript">
 		$(document).ready(function () {
 
+			// слайдер с отзывами
+			$('.feedback-slider').slick({
+				prevArrow: '<button class="prev arrow"></button>',
+				nextArrow: '<button class="next arrow"></button>',
+
+			});
+
+			// слайдер с преимуществами
 			$('.features-slider').slick({
 				infinite: true,
 				slidesToShow: 4,
@@ -545,6 +609,7 @@
 				]
 
 			});
+
 			$('.materials-slider').slick({
 				infinite: true,
 				slidesToShow: 4,
@@ -596,4 +661,5 @@
 	{/literal} End FastcallAgent code -->
 
 </body>
+
 </html>
