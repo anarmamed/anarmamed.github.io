@@ -111,7 +111,7 @@ body {
 		display: block;
 		height: 5rem;
 		width: 100%;
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 	}
 }
 
@@ -448,6 +448,9 @@ body {
 		box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
 		padding: 3rem;
 		&_item {
+			.fotorama {
+				margin-bottom: 2rem;
+			}
 			.description {
 				margin-bottom: 4rem;
 				p {
@@ -504,7 +507,7 @@ body {
 // секция Посмотрите
 .tour {
 	background: url(../img/bg2.jpg) no-repeat center top / cover;
-	padding: 4rem;
+	padding: 4rem 0;
 	&-header {
 		text-align: center;
 		margin-bottom: 4rem;
@@ -516,9 +519,10 @@ body {
 	&-text {
 		p {
 			text-align: center;
-			font-size: 2rem;
+			font-size: 1.5rem;
 			text-transform: uppercase;
-			line-height: 4rem;
+			line-height: 3rem;
+			margin-bottom: 2rem;
 		}		
 	}
 	&-form {
@@ -542,7 +546,7 @@ body {
 		color: @light;
 		margin-bottom: 4rem;
 		h3 {
-			font-size: 3.5rem;
+			font-size: 3rem;
 			text-transform: uppercase;
 		}
 		p {
@@ -604,8 +608,19 @@ body {
 		top: 10%;
 		background-color: @light;
 		transform: translateX(-50%);
-		padding: 2rem;
+		padding: 1rem;
 		text-align: center;
+		.form {
+			padding: 2rem;
+		&-input {
+			padding: 1rem;
+			margin-bottom: 1rem;
+		&-btn {
+			padding: 1rem;
+		}
+		
+			}
+		}
 	}
 
 	&-close {
@@ -639,8 +654,17 @@ body {
 				margin-bottom: 3rem;
 			}
 		}
+		&-content {
+			h1{
+				font-size: 3.5rem;
+			}
+			
+		}
 		&-subtitle {
-			font-size: 1.5rem;
+			font-size: 2rem;
+		}
+		&-span {
+			margin-bottom: 3rem;
 		}
 	}
 
@@ -653,33 +677,15 @@ body {
 		}
 	}
 
-	.tour {
-		background-image: url(../img/tourbg.jpg);
-		background-position: center right;
-		&-title {
-			
-			.bold();
+	.problems {
+		&-man {
+			display: none;
 		}
 	}
 
-	.scheme {
-		background: #fff url(../img/schemebg.png) bottom right -15rem no-repeat;
-		background-size: 40rem;
-		&-list {
-			min-height: 50rem;
-		}
-		&-title {
-			h2{
-				font-size: 3rem;
-				.bold();
-				color: #000;
-			}
-			p {
-				font-size: 2rem;
-				color: #fff;
-				.bold();
-			}
-		}	
+	.tour {
+		background-color: @bg-light;
+
 	}
 }	
 
@@ -728,12 +734,6 @@ body {
 		}
 	}
 
-	.scheme {
-		background: none;
-		height: auto;
-		text-align: center;
-	}
-
 	.problems {
 		&-man {
 			display: none;
@@ -744,7 +744,7 @@ body {
 	}
 
 	.tour {
-		background: #cccccc;
+		background-color: @bg-light;
 		&-title {
 			text-align: center;
 			h2 {
