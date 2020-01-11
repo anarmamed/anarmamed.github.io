@@ -63,9 +63,16 @@ background:  linear-gradient(to top left, rgb(231, 150, 231), rgb(243, 146, 165)
 .contant ul li:focus {
 	background-color: rgb(203, 203, 255);
 	color: #ffffff;
+	cursor: pointer;
+}
+.contant ul li:active {
+	background-color: rgb(203, 203, 255);
+	color: #ffffff;
+	cursor: pointer;
 }
 .contant ul li:hover {
 	background-color: rgb(203, 203, 255);
 	color: #ffffff;
+	cursor: pointer;
 }
 
