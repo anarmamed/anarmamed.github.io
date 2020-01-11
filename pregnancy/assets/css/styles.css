@@ -60,7 +60,7 @@ background:  linear-gradient(to top left, rgb(231, 150, 231), rgb(243, 146, 165)
 	color: #555555;
 }
 
-.contant ul li:focus {
+.contant ul li:focus-within {
 	background-color: rgb(203, 203, 255);
 	color: #ffffff;
 	cursor: pointer;
