@@ -54,12 +54,10 @@
           <div class="col-lg-3 offset-lg-0 col-md-4 col-10">
             <button type="button" class="btn btn-primary button-first" data-toggle="modal"
               data-target="#exampleModal_1">Быстрая заявка</button>
-            <span>Мы перезвоим Вам <br> для уточнения деталей</span>
           </div>
           <div class="col-lg-3 offset-lg-0 col-md-4 col-10">
-            <button type="button" class="btn btn-outline-primary button-second" data-toggle="modal"
-              data-target="#exampleModal">Подробная заявка</button>
-            <span>Заполните подробную<br> заявку онлайн!</span>
+           <a href="#form"><button type="button" class="btn btn-outline-primary button-second" 
+              data-target="#form">Подробная заявка</button></a>
           </div>
         </div>
       </div>
@@ -138,7 +136,7 @@
       <h4>Клиенты о нас</h4>
       <div class="media-cards text-left">
         <div class="row mt-5">
-          <div class="col-md-6">
+          <div class="col-12 col-md-6">
             <div class="media">
               <img src="img/User.png" class="mr-3" alt="Клиент">
               <div class="media-body">
@@ -148,7 +146,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-12 col-md-6">
             <div class="media">
               <img src="img/fase_2.png" class="mr-3" alt="Клиент">
               <div class="media-body">
@@ -161,7 +159,7 @@
           </div>
         </div>
         <div class="row mt-5">
-          <div class="col-md-6">
+          <div class="col-12 col-md-6">
             <div class="media">
               <img src="img/fase_1.png" class="mr-3" alt="Клиент">
               <div class="media-body">
@@ -172,7 +170,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-12 col-md-6">
             <div class="media">
               <img src="img/fase_4.png" class="mr-3" alt="Клиент">
               <div class="media-body">
@@ -189,63 +187,66 @@
     </div>
   </section>
 
-  <section class="logo">
-    <div class="container text-center logos">
-      <h3>Имеем в наличии детали на авто:</h3>
-      <div class="row d-flex justify-content-center mt-5">
-        <div class="col-md-2">
-          <img src="img/audi-logo.png" alt="">
+  <section class="logos">
+    <div class="container">
+      <h3 class="text-center">Имеем в наличии детали на авто:</h3>
+      <div class="logotip">
+        <div class="row">
+       
+          <div class="col-3">
+            <img src="img/bentley-11.png" alt="">
+          </div>
+          <div class=" col-3">
+            <img src="img/honda.png" alt="">
+          </div>
+          <div class=" col-3">
+            <img src="img/jaguar-logo.png" alt="">
+          </div>
+          <div class=" col-3">
+            <img src="img/logo-jeep.png" alt="">
+          </div>
         </div>
-        <div class="col-md-2">
-          <img src="img/bentley-11.png" alt="">
+        <div class="row">
+          <div class="col-3">
+            <img src="img/logo-land-rover.png" alt="">
+          </div>
+          <div class="col-3">
+            <img src="img/Mercedes-Benz-logo1.png" alt="">
+          </div>
+          <div class="col-3">
+            <img src="img/mini_logo.png" alt="">
+          </div>
+          <div class="col-3">
+            <img src="img/Porsche_logo.png" alt="">
+          </div>
         </div>
-        <div class="col-md-2">
-          <img src="img/honda.png" alt="">
-        </div>
-        <div class="col-md-2">
-          <img src="img/jaguar-logo.png" alt="">
-        </div>
-        <div class="col-md-2">
-          <img src="img/logo-jeep.png" alt="">
+        <div class="row ">
+          <div class="col-3">
+            <img src="img/Volkswagen-Logo-AutoWolrd-2012-blogspot-com.png" alt="">
+          </div>
+          <div class="col-3">
+            <img src="img/Volvo_Logo.svg.png" alt="">
+          </div>
+          <div class="col-3">
+            <img src="img/20090512213331_Mazda_Logo.png" alt="">
+          </div>
+          <div class="col-3">
+            <img src="img/5.png" alt="">
+          </div>
         </div>
       </div>
-      <div class="row d-flex justify-content-center mt-5">
-        <div class="col-md-2">
-          <img src="img/logo-land-rover.png" alt="">
-        </div>
-        <div class="col-md-2">
-          <img src="img/Mercedes-Benz-logo1.png" alt="">
-        </div>
-        <div class="col-md-2">
-          <img src="img/mini_logo.png" alt="">
-        </div>
-        <div class="col-md-2">
-          <img src="img/Porsche_logo.png" alt="">
-        </div>
-      </div>
-      <div class="row d-flex justify-content-center mt-5">
-        <div class="col-md-2">
-          <img src="img/Volkswagen-Logo-AutoWolrd-2012-blogspot-com.png" alt="">
-        </div>
-        <div class="col-md-2">
-          <img src="img/Volvo_Logo.svg.png" alt="">
-        </div>
-        <div class="col-md-2">
-          <img src="img/20090512213331_Mazda_Logo.png" alt="">
-        </div>
-        <div class="col-md-2">
-          <img src="img/5.png" alt="">
-        </div>
-      </div>
+      
     </div>
   </section>
 
   <section class="form">
     <div class="container ">
       <div class="form-title">
+        <a href="#" name="form"></a>
         <h2>Подробная заявка</h2>
         <p>Заполните форму и узнайте точную стоимость!</p>
       </div>
+     
       <div class="card-form">
         <div class="row d-flex justify-content-center">
           <div class="col-md-4">
@@ -256,6 +257,9 @@
                 <option value="1">BMW</option>
                 <option value="2">Audi</option>
                 <option value="3">Mercedes</option>
+                <option value="3">Volvo</option>
+                <option value="3">Volkswagen</option>
+                <option value="3">Mazda</option>
               </select>
               <div class="form-group text-left mt-3">
                 <label class="mr-sm-2" for="inlineFormCustomSelect">Модель:</label>
@@ -263,7 +267,14 @@
                   <option selected>Выберите модель</option>
                   <option value="1">Q5</option>
                   <option value="2">A6</option>
-                  <option value="3">C3</option>
+                  <option value="3">Q3</option>
+                  <option value="3">Q4</option>
+                  <option value="3">Q6</option>
+                  <option value="3">C2</option>
+                  <option value="3">C1</option>
+                  <option value="3">B1</option>
+                  <option value="3">B2</option>
+                  <option value="3">B4</option>
                 </select>
               </div>
               <div class="form-group text-left mt-3">
@@ -276,6 +287,15 @@
                   <option value="1">2003</option>
                   <option value="2">2004</option>
                   <option value="3">2005</option>
+                  <option value="3">2006</option>
+                  <option value="3">2007</option>
+                  <option value="3">2008</option>
+                  <option value="3">2009</option>
+                  <option value="3">2010</option>
+                  <option value="3">2011</option>
+                  <option value="3">2012</option>
+                  <option value="3">2013</option>
+                  <option value="3">2014</option>
                 </select>
               </div>
             </div>
@@ -299,9 +319,9 @@
               <label for="exampleFormControlInput1">Ваш email:</label>
               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Эл.почта">
             </div>
-            <button type="submit" class="btn btn-form mb-2" data-toggle="modal" data-target="#exampleModal_2">Узнать
-              цену</button>
           </div>
+          <button type="submit" class="btn btn-form mb-2" data-toggle="modal" data-target="#exampleModal_2">Узнать
+            цену</button>
         </div>
       </div>
     </div>
