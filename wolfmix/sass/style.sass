@@ -1,0 +1,299 @@
+// подключение шрифтов
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap')
+	
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+html
+	font-family: 'Open Sans', sans-serif
+	color: #555555
+
+ul, nav
+	list-style: none
+
+.container
+	max-width: 1200px
+	margin: 0 auto
+	padding: 0px 15px
+	@media screen and (max-width: 1200px)
+			max-width: 970px
+	@media screen and (max-width: 992px)
+			max-width: 750px
+	@media screen and (max-width: 767px)
+			max-width: none
+
+// ------------------------------------------------- ГЛАВНАЯ СЕКЦИЯ
+.main
+	background: linear-gradient( to bottom,rgba(0, 0, 0, .7) , rgba(255, 255, 255, 0.1)  ), url('../img/bg.jpg') no-repeat center center / cover
+	min-height: 90vh
+	&-header
+		width: 100%
+		display: flex
+		justify-content: space-around
+		align-items: center
+		flex-wrap: wrap
+		margin-bottom: 100px
+		padding: 20px 0
+		&_brand 
+			a
+				text-decoration: none
+				font-size: 30px
+				color: #ffffff
+				font-weight: 700
+				span 
+					color: #0c7eb8
+		&_phone a
+			cursor: pointer
+			text-decoration: none
+			color: #ffffff
+			font-size: 24px	
+			transition: all 0.3s ease
+			&:hover
+				border-bottom: 2px solid #fff
+				
+		&_btn 
+			width: 180px
+			font-size: 14px
+			border: 2px solid #fff
+			border-radius: 7px
+			background-color: #03202e
+			color: #ffffff
+			padding: 10px 
+			&:hover
+				transition: all 0.3s ease-in
+				background-color: transparent
+	&-content
+		text-align: center
+		&_title	
+			color: #ffffff
+			margin-bottom: 80px
+			h1 
+				font-size: 35px
+				text-transform: uppercase
+				margin-bottom: 20px
+				span
+					font-size: 40px
+					text-transform: none
+			h2
+				font-size: 24px
+		&_btn
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+		
+			&__1
+				width: 250px
+				font-size: 16px
+				border: none
+				border-radius: 7px
+				background-color: #03202e
+				color: #ffffff
+				margin: 0 20px 20px 0
+				padding: 15px 20px
+				&:hover
+					background-color: transparent
+					border: 2px solid #ffffff
+					transition: all 0.3s ease-in
+			&__2
+				width: 250px
+				font-size: 16px
+				border: 2px solid #ffffff
+				border-radius: 7px
+				background-color: transparent
+				color: #ffffff
+				margin: 0 20px 20px 0
+				padding: 15px 20px
+				&:hover
+					background-color: #03202e
+					transition: all 0.3s ease-in
+
+// -----------------------------------секция ПРЕИМУЩЕСТВА
+.advantage
+	padding: 40px 0
+	&-slider
+		display: flex
+		justify-content: space-between
+		.advantage-block
+			text-align: center
+			margin: 0 20px 20px 0
+			img 
+				width: 64px
+				margin: 20px auto
+			h4 
+				text-transform: uppercase
+				margin-bottom: 20px
+			p
+
+
+// --------------------------------------секция ОПИСАНИЕ
+.description
+	background: transparent 
+	min-height: 900px
+	color: #fff
+	padding: 40px 0
+	&-wrapper 
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	.block
+		max-width: 600px
+		margin-bottom: 40px
+		&-item
+			margin-bottom: 30px
+		&-title
+			position: relative
+			margin-bottom: 10px
+			padding-left: 25px
+			cursor: pointer
+			font-size: 20px
+			&.active:before,			
+			&.active::after
+				background-color: #fff
+			&.active:before
+				transform: rotate(-40deg)
+			&.active::after
+				transform: rotate(40deg)	
+			&::before
+				content: ''
+				width: 10px
+				height: 2px
+				background-color: #fff
+				position: absolute
+				top: 10px
+				transform: rotate(40deg)
+				left: 0
+				transition: all 0.3s ease 0s
+			&::after
+				content: ''
+				width: 10px
+				height: 2px
+				background-color: #fff
+				position: absolute
+				top: 10px
+				transform: rotate(-40deg)
+				left: 7px
+				transition: all 0.3s ease 0s
+		&-text 
+			display: none	
+			font-size: 20px
+	&-wrapper
+		display: flex
+		justify-content: space-around
+.fotorama 
+	width: 400px
+	border: 1px solid #fff
+	img 
+		max-width: 100%
+
+// -------------------------------------------------ВИДЕО
+.video
+	padding: 40px 0
+	&-title
+		text-align: center
+		font-size: 24px
+		text-transform: uppercase
+		margin-bottom: 20px
+	&-block
+		display: flex
+		justify-content: center
+	
+// ---------------------------------------------ОТЗЫВЫ
+.feedback
+	background: url(../img/bg3.jpg)
+	padding: 40px 0
+	text-align: center
+	&-slider
+		text-align: center
+		margin-bottom: 20px
+		&_item 
+			background-color: #fff
+			color: #000
+			margin: 0 20px 20px 0
+			padding: 20px 
+			box-shadow: 0 0 10px #fff
+			h4 
+				display: inline-block
+				border-bottom: 2px solid #000
+				margin-bottom: 20px
+			p 
+				margin-bottom: 10px
+	.btn 
+		background-color: #03202e
+		padding: 10px 20px
+		border: 2px solid #fff
+		border-radius: 8px
+		color: #fff
+		font-size: 16px
+		&:hover
+			cursor: pointer			
+		
+
+//  -----------------------------------------секция ФОРМА
+.form 
+
+
+
+
+// -------------------------------------------ЗАГОЛОВКИ h3
+.section-title
+	h3
+		text-align: center
+		font-size: 30px
+		text-transform: uppercase
+		margin-bottom: 40px	
+.section-title_white
+	h3
+		color: #ffffff
+		text-align: center
+		font-size: 30px
+		text-transform: uppercase
+		margin-bottom: 40px	
+
+
+// ----------------------------------------оформление slick-slider
+.slick-active 
+	outline: none
+
+.arrow 
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	z-index: 99
+	width: 40px
+	height: 40px
+	border: none
+
+.prev 
+	left: -10px
+	background: url(../img/left_arrow.png) center no-repeat
+	background-size: 100%
+
+.next 
+	right: 10px
+	background: url(../img/right_arrow_icon.png) center no-repeat
+	background-size: 100%
+
+		
+// ---------------------------------------МЕДИАЗАПРОСЫ
+@media screen and ( max-width: 767px  )
+	.main-header 
+		flex-direction: column
+		margin-bottom: 40px
+		&_brand 
+			margin-bottom: 20px
+		&_phone 
+			margin-bottom: 20px
+
+	.main-content_title h1
+		font-size: 24px
+	.main-content_title h1 span
+		font-size: 24px
+	.main-content_title h2	
+		font-size: 16px
+	.main-content_btn__1
+		margin: 0 0 40px 0
+	.main-content_btn__2
+		display: none
+	
