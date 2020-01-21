@@ -1,7 +1,7 @@
 
 
 # Anar Mamedov
- My personal porfolio
+ My personal projects
 
 
 
