@@ -1,0 +1,824 @@
+
+	/*Обнуление*/
+*
+	padding: 0
+	margin: 0
+	border: 0
+
+*,*:before,*:after
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap')
+
+a:focus,a:active
+  outline: none
+a, a:visited, a:hover
+  text-decoration: none
+
+nav,footer,header,aside
+  display: block
+
+button
+  cursor: pointer
+  padding: 0
+  border: 0
+
+ul li
+  list-style: none
+
+html,body
+	height: 100%
+	width: 100%
+	font-size: 100%
+	line-height: 1
+	font-size: 14px
+	font-family: 'Poppins', sans-serif
+	color: #555555
+
+/* ----------------------- */
+
+
+.container 
+	max-width: 1170px
+	margin: 0 auto
+	padding: 0 15px
+
+.container-fluid 
+	width: 100%
+	padding-right: 30px
+	padding-left: 30px
+
+.header
+	position: fixed
+	width: 100%
+	top: 0
+	left: 0
+	z-index: 99
+	&:before 
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-image: linear-gradient(to right, #c81d5e, #1385c4, #00d0a2)
+		box-shadow: 0px 2px 10px #ffffff
+		z-index: 2
+	&_body 
+		position: relative
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&_list
+		display: flex
+		position: relative
+		z-index: 2
+		li 
+			margin-left: 20px	
+	&_link
+		color: #ffffff
+		font-size: 16px
+	&_btn 
+		background-color: #fff
+		padding: 10px	
+		border: 1px solid #fff
+		border-radius: 5px
+		transition: 0.3s
+		&:hover 
+			cursor: pointer
+			background: #00d0a2
+	&_burger 
+		display: none
+	&_logo 
+		padding: 5px 0
+		position: relative
+		z-index: 3
+
+.main
+	min-height: 100vh
+	background: transparent 
+	&_content
+		text-align: center
+		padding-top: 100px
+		&-text
+			h1
+				color: #fff
+				font-size: 64px
+				text-transform: uppercase
+				line-height: 1.5
+				text-align: center
+				display: block
+				font-weight: normal
+				margin-bottom: 40px
+		&-btn
+			background-color: #c51f60
+			padding: 10px
+			width: 120px
+			border-radius: 5px
+			color: #ffffff
+			font-size: 18px
+
+
+
+.section_title 
+	padding: 60px 0
+	text-align: center
+	background: url('../img/colortitle.png') no-repeat center center
+	h3
+		display: inline-block
+		font-size: 40px
+		text-transform: uppercase
+		font-weight: normal
+	
+
+
+.welcome
+	.welcome_block
+		display: flex
+		justify-content: center
+		
+		flex-wrap: wrap
+		margin-bottom: 40px
+		&-img img
+			max-width: 600px
+			border-radius: 10px
+			margin-bottom: 20px
+		&-text 
+			background: linear-gradient(to right, #324e97 0, #e7bcbe 100%)
+			margin-bottom: 20px
+			max-width: 650px
+			border-radius: 10px
+			h4 
+				text-align: center
+				font-size: 24px
+				padding-top: 20px
+				color: #ffffff
+				
+			
+			ul 
+				display: flex
+				flex-direction: column
+				flex-wrap: wrap
+				padding: 20px
+				li 
+					background: url('../img/paint-brush.png') no-repeat left
+					color: #fff
+					font-size: 18px
+					line-height: 1.2
+					padding: 10px 0 10px 50px
+
+
+.service	
+	.service_block-1
+		position: relative
+		padding-top: 20%
+		background: url('../img/artage.png') top left no-repeat
+		margin-bottom: 80px
+		&-text
+			padding: 20px 40px
+			background: #eee
+			border-radius: 10px
+			.service-text
+				width: 400px
+				h3 
+					padding: 10px 0
+					font-size: 22px
+					font-weight: 700
+					span 
+						color: #0c90c3
+						font-size: 32px
+						font-weight: 700
+				p 
+					line-height: 1.9
+					font-size: 16px		
+		&-img 
+			position: absolute
+			right: 40px
+			top: 40px
+			img 
+				width: 700px
+				border-radius: 10px
+
+	.service_block-2
+		position: relative
+		padding-top: 20%
+		background: url('../img/artage2.png') top right no-repeat
+		margin-bottom: 80px
+		&-text
+			text-align: right
+			padding: 30px 50px
+			background: #eee
+			border-radius: 10px
+			.service-text
+				display: inline-block
+				text-align: right
+				width: 400px
+			h3 
+				padding: 10px 0
+				font-size: 22px
+    		font-weight: 700
+				span 
+					color: #0c90c3
+					font-size: 32px
+					font-weight: 700
+			p 
+				line-height: 1.9
+				font-size: 16px		
+		&-img 
+			position: absolute
+			left: 40px
+			top: 40px
+			img 
+				width: 700px
+				border-radius: 10px
+
+	.service_block-3
+		position: relative
+		padding-top: 20%
+		background: url('../img/artage3.png') top left no-repeat
+		margin-bottom: 80px
+		&-text
+			padding: 30px 50px
+			background: #eee
+			border-radius: 10px
+			.service-text
+				width: 400px
+			h3 
+				padding: 10px 0
+				font-size: 22px
+    		font-weight: 700
+				span 
+					color: #0c90c3
+					font-size: 32px
+					font-weight: 700
+			p 
+				line-height: 1.9
+				font-size: 16px		
+		&-img 
+			position: absolute
+			right: 40px
+			top: 40px
+			img 
+				width: 700px
+				border-radius: 10px
+
+	.service_block-4
+		position: relative
+		padding-top: 20%
+		background: url('../img/artage4.png') top right no-repeat
+		margin-bottom: 80px
+		&-text
+			text-align: right
+			padding: 30px 50px
+			background: #eee
+			border-radius: 10px
+			.service-text
+				display: inline-block
+				
+				width: 400px
+			h3 
+				padding: 10px 0
+				font-size: 22px
+    		font-weight: 700
+				span 
+					color: #0c90c3
+					font-size: 32px
+					font-weight: 700
+			p 
+				
+				line-height: 1.9
+				font-size: 16px		
+		&-img 
+			position: absolute
+			left: 40px
+			top: 40px
+			img 
+				width: 700px
+				border-radius: 10px
+
+	.service_block-5
+		position: relative
+		padding-top: 20%
+		background: url('../img/artage.png') top left no-repeat
+		margin-bottom: 80px
+		&-text
+			padding: 30px 50px
+			background: #eee
+			border-radius: 10px
+			.service-text
+				width: 400px
+			h3 
+				padding: 10px 0
+				font-size: 22px
+    		font-weight: 700
+				span 
+					color: #0c90c3
+					font-size: 32px
+					font-weight: 700
+			p 
+				line-height: 1.9
+				font-size: 16px		
+		&-img 
+			position: absolute
+			right: 40px
+			top: 40px
+			img 
+				width: 700px
+				border-radius: 10px
+
+.service_block-6
+		position: relative
+		padding-top: 20%
+		background: url('../img/artage2.png') top right no-repeat
+		margin-bottom: 80px
+		&-text
+			text-align: right
+			padding: 30px 50px
+			background: #eee
+			border-radius: 10px
+			.service-text
+				display: inline-block
+				width: 400px
+			h3 
+				padding: 10px 0
+				font-size: 22px
+    		font-weight: 700
+				span 
+					color: #0c90c3
+					font-size: 32px
+					font-weight: 700
+			p 
+				
+				line-height: 1.9
+				font-size: 16px		
+		&-img 
+			position: absolute
+			left: 40px
+			top: 40px
+			img 
+				width: 700px
+				border-radius: 10px
+
+
+
+.choose_block
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-wrap: wrap
+	padding: 20px 0 40px 0
+	&-img img
+		max-width: 500px
+		border-radius: 10px
+		margin-bottom: 20px
+	&-text 
+		background: linear-gradient(to right, #b1a0cf 0, #5c4c97 100%)
+    padding: 30px
+    min-height: 400px
+		max-width: 700px
+		border-radius: 10px
+		h4 
+			text-align: center
+			font-size: 24px
+			padding-top: 20px
+			color: #ffffff
+		ul 
+			display: flex
+			flex-direction: column
+			flex-wrap: wrap
+			padding: 30px
+			li 
+				background: url('../img/check.png') no-repeat left 5px
+				color: #fff
+				font-size: 18px
+				line-height: 1.2
+				padding: 10px 0 10px 50px
+
+
+.process
+	padding: 60px 0
+	background-image: linear-gradient(to right, #269dc7, #3ab5b9, #4ac9ae)
+
+	&-title
+		text-align: center
+		color: #ffffff
+		font-size: 40px
+		font-weight: normal
+		padding: 20px 0
+		margin-bottom: 40px
+	&_block
+		p
+			text-align: center
+			font-size: 16px
+			color: #ffffff
+			margin-bottom: 20px
+			span 
+				font-size: 22px
+				font-weight: bold
+				color:  #5c4c97 
+		img 
+			margin: 10px auto
+			border-radius: 50%
+			overflow: hidden
+			max-width: 300px
+		
+
+
+.quote
+	width: 100%
+	padding: 40px 0
+	background: linear-gradient(  rgba(255, 255, 255, 0.5),rgba(0, 0, 0, 0.9) ), url('../img/girl.jpg') no-repeat	top center
+	background-size: cover
+	&_content
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		
+		&-text 
+			max-width: 500px
+			padding-top: 100px
+			color: #fff
+			h3 
+				font-size: 60px
+				text-transform: uppercase
+				font-weight: bold
+				margin-bottom: 20px
+			p 
+				font-size: 24px
+				margin-bottom: 20px
+			span 
+				display: inline-block
+				color: #49c8ae
+				text-transform: uppercase
+				font-size: 70px	
+				margin-bottom: 40px
+			button 
+				background-color: transparent
+				border: 1px solid #fff
+				border-radius: 5px
+				color: #ffffff
+				padding: 10px 20px
+				font-size: 20px
+				transition: 0.3s
+				&:hover 
+					background-color: #49c8ae
+			
+		&-form
+			width: 400px
+			margin-top: 100px	
+			background-image: linear-gradient(to top, #269dc7, #3ab5b9, #4ac9ae)
+			margin-bottom: 40px
+			padding: 20px 30px
+			border-radius: 8px
+			h4 
+				color: #fff
+				font-size: 28px
+				text-align: center
+				margin: 0 0 20px
+				text-transform: uppercase
+				display: block
+				line-height: 1.2
+				position: relative
+				padding-bottom: 10px
+				font-weight: 700
+			.form-control
+				display: block
+				width: 100%
+				margin-bottom: 20px
+				padding: 10px
+				border-radius: 5px
+				background-color: transparent
+				color: #fff
+				border: 1px solid #ffffff
+			.form-label 
+				color: #fff	
+				font-size: 18px
+			.form_btn 
+				display: block
+				background-color: transparent
+				border: 1px solid #fff
+				border-radius: 5px
+				color: #ffffff
+				margin: 0 auto
+				padding: 10px 20px
+				font-size: 20px
+				transition: 0.3s
+				&:hover 
+					cursor: pointer
+					background-color: #49c8ae
+
+
+.footer 
+	background: linear-gradient(to bottom, #269dc7, #3ab5b9, #4ac9ae)
+	padding: 20px 0 
+	color: #fff
+	&_logo 
+		img 
+			margin-bottom: 10px
+	&_links
+		display: flex
+		flex-direction: column
+		text-align: center
+		span 
+			font-size: 18px
+			margin-bottom: 10px
+		li 
+			padding: 5px 0 
+	&_contact
+		font-size: 16px
+		span 
+			display: inline-block
+			font-size: 18px
+			margin-bottom: 10px
+		p 
+			margin-bottom: 10px
+	&_social 	
+		text-align: center	
+		h5 
+			margin-bottom: 20px
+			font-size: 16px
+		a 
+			
+			display: inline-block
+			font-size: 40px
+			margin-left: 10px
+
+
+.popup 
+	display: none
+	position: fixed
+	left: 0
+	top: 0
+	bottom: 0
+	right: 0
+	width: 100%
+	height: 100%
+	z-index: 9
+	background-color: rgba(0, 0, 0, 0.5)
+	border-radius: 10px
+
+	&-content 
+		position: fixed
+		left: 50%
+		top: 20%
+		background: linear-gradient(to bottom, #269dc7, #3ab5b9, #4ac9ae)
+		transform: translateX(-50%)
+		padding: 20px
+		text-align: center
+		color: #fff
+		border-radius: 10px
+	&-form 
+		padding: 20px
+		display: flex
+		flex-direction: column
+		border-radius: 10px
+		color: #fff
+		&-input 
+			padding: 10px
+			margin-bottom: 20px
+			border-radius: 10px
+		&-label
+			margin-bottom: 10px
+		&-btn 
+			padding: 10px	
+			color: #fff
+			border: 1px solid #fff
+			border-radius: 10px	
+			background: transparent 
+			&:hover	
+				cursor: pointer
+				background:#269dc7
+	&-close 
+		position: absolute
+		top: -10px
+		border: none
+		text-align: center
+		right: -25px
+		font-size: 30px
+		background-color: transparent
+		color: #fff
+
+		
+@media screen and ( max-width: 1100px )
+
+	.service .service_block-1-img
+		right: 20px
+		top: 60px
+		img
+			width: 500px
+	.service .service_block-2-img
+		left: 20px
+		top: 80px
+		img
+			width: 500px
+	.service .service_block-3-img
+		right: 20px
+		top: 60px
+		img
+			width: 500px
+	.service .service_block-4-img
+		left: 20px
+		top: 80px
+		img
+			width: 500px
+	.service .service_block-5-img
+		right: 20px
+		top: 60px
+		img
+			width: 500px
+	.service .service_block-6-img
+		left: 20px
+		top: 80px
+		img
+			width: 500px
+	
+	.choose_block-img img
+		max-width: 100%
+	.choose_block-text
+		max-width: 100%
+
+
+@media screen and ( max-width: 992px )
+
+	body.lock
+		overflow: hidden
+
+	.header_burger 
+		display: block
+		position: relative
+		width: 30px
+		height: 20px
+		z-index: 3
+		span 
+			position: absolute
+			width: 100%
+			height: 2px
+			left: 0
+			top: 9px
+			background-color: #ffffff
+			transition: all 0.3s ease 0s 
+		&::before
+			content: ''
+			position: absolute
+			width: 100%
+			height: 2px
+			left: 0
+			top: 0
+			background-color: #ffffff
+			transition: all 0.3s ease 0s 
+		&:after 
+			content: ''
+			position: absolute
+			width: 100%
+			height: 2px
+			left: 0
+			bottom: 0
+			background-color: #ffffff
+			transition: all 0.3s ease 0s 
+		&.active span
+			transform: scale(0)
+		&.active:before 
+			transform: rotate(45deg)
+			top: 9px
+		&.active:after 
+			transform: rotate(-45deg)
+			bottom: 9px
+
+
+	.header_menu 
+		position: fixed
+		width: 100%
+		height: 100%
+		top: -100%
+		left: 0
+		overflow: auto
+		background: linear-gradient(to bottom, #269dc7, #3ab5b9, #4ac9ae)
+		padding-top: 70px
+		padding-bottom: 20px
+		text-align: center
+		transition: all 0.5s ease 0s 
+		&.active 
+			top: 0
+	.header_logo img
+		height: 40px
+
+	.header_list 
+		display: block	
+		li 
+			margin: 0 0 30px 0
+
+	.header_link
+		font-size: 18px
+
+
+	.service .service_block-1
+		padding-top: 40%
+	.service .service_block-1-img
+		position: relative
+		img
+			max-width: 100%
+	.service .service_block-2
+		padding-top: 40%
+	.service .service_block-2-img
+		position: relative
+		img
+			max-width: 100%
+	.service .service_block-3
+		padding-top: 40%
+	.service .service_block-3-img
+		position: relative
+		img
+			max-width: 100%
+	.service .service_block-4
+		padding-top: 40%
+	.service .service_block-4-img
+		position: relative
+		img
+			max-width: 100%
+	.service .service_block-5
+		padding-top: 40%
+	.service .service_block-5-img
+		position: relative
+		img
+			max-width: 100%
+	.service .service_block-6
+		padding-top: 40%
+	.service .service_block-6-img
+		position: relative
+		img
+			max-width: 100%
+	
+	.quote_content
+		justify-content: center
+		text-align: center		
+
+@media screen and ( max-width: 767px )	
+
+	.container-fluid 
+		padding: 0 10px 
+
+	.welcome .welcome_block-img
+		max-width: 100%
+		img
+			max-width: 100%
+
+	.welcome .welcome_block-text ul li
+		background: none 
+		padding: 10px
+
+	.service .service_block-1-text .service-text
+		width: 100%
+	.service .service_block-2-text .service-text
+		width: 100%
+	.service .service_block-3-text .service-text
+		width: 100%
+	.service .service_block-4-text .service-text
+		width: 100%
+	.service .service_block-5-text .service-text
+		width: 100%
+	.service .service_block-6-text .service-text
+		width: 100%
+
+	.process_block img
+		max-width: 200px
+
+	.choose_block-text ul
+		padding: 5px
+		li
+			background: none	
+			padding: 10px
+			font-size: 14px
+
+	.slick-next 
+		right: 0
+		
+	.slick-prev 
+		left: 0
+
+
+	.main_content-text h1
+		font-size: 30px
+
+	.section_title h3
+		font-size: 20px
+
+	.process-title
+		font-size: 20px	
+
+	.quote_content-text h3
+		font-size: 40px	
+	.quote_content-text span
+		font-size: 40px
+
+	.footer 
+		&_logo 
+				margin-bottom: 30px
+		&_links
+			margin-bottom: 30px
+		&_contact
+			margin-bottom: 30px
+		&_social 	
+			margin-bottom: 30px
+		
