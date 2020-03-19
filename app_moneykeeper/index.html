@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="app">
+    <div class="logo">
+      <span>Money</span>Keeper - Программа для расчета бюджета
+    </div>
+
+    <div class="main">
+      <div class="data">
+        <div class="open">
+          <button class="start" id="start">Начать рассчет</button>
+        </div>     
+
+        <div class="choose-expenses"><p>Расходы в месяц:</p></div>
+        <input class="expenses-item" type="text" id="expenses_1" placeholder="Наименование">
+        <input class="expenses-item" type="text" id="expenses_2" placeholder="Стоимость">
+        <input class="expenses-item" type="text" id="expenses_3" placeholder="Наименование">
+        <input class="expenses-item" type="text" id="expenses_4" placeholder="Стоимость">
+        <input class="expenses-item" type="text" id="expenses_5" placeholder="Наименование">
+        <input class="expenses-item" type="text" id="expenses_6" placeholder="Стоимость">
+        <button class="expenses-item-btn">Подтвердить</button>
+
+        <div class="checksavings">Доход от накоплений:
+          <input id="savings" type="checkbox" />
+        </div>
+        <label for="sum">Сумма</label>
+        <input class="choose-sum" id="sum" type="text">
+        <label for="percent">Процент</label>
+        <input class="choose-percent" id="percent" type="text">
+
+        <button class="count-budget-btn">Рассчитать</button>
+      </div>
+
+
+      <div class="result">
+        <div class="result-title" >
+          <h3>Результаты</h3>
+        </div>
+        <div class="result-table">
+          <div class="budget">Доход: </div>
+          <div class="budget-value"></div>
+
+          <div class="expenses">Расходы: </div>
+          <div class="expenses-value"></div>
+
+          <div class="daybudget">Бюджет на день: </div>
+          <div class="daybudget-value"></div>
+
+          <div class="level">Уровень достатка: </div>
+          <div class="level-value"></div>
+
+          <div class="monthsavings">Накопления за месяц:</div>
+          <div class="monthsavings-value"></div>
+
+          <div class="yearsavings">Накопления за год:</div>
+          <div class="yearsavings-value"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
