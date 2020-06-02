@@ -5,9 +5,10 @@ $(function(){
     fade: true,
     prevArrow: '<img class="slick-arrow__left"  src="img/arrow-left.svg">',
     nextArrow: '<img class="slick-arrow__right"  src="img/arrow-right.svg">',
-    asNavFor: '.slider-dots'
+    asNavFor: '.slider-dotshead'
   });
-  $('.slider-dots').slick({
+
+  $('.slider-dotshead').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     asNavFor: '.header__slider',
@@ -44,4 +45,21 @@ $(function(){
       },
     ]
   });
+
+  $('.surf-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: '<img class="slick-arrow__left"  src="img/arrow-left.svg">',
+    nextArrow: '<img class="slick-arrow__right"  src="img/arrow-right.svg">',
+    asNavFor: '.slider-map',
+  });
+
+  $('.slider-map').slick({
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    arrows: false,
+    asNavFor: '.surf-slider',
+    focusOnSelect: true,
+  });
+
 });
