@@ -27,7 +27,8 @@
         <path class='line__animation animate__animated '
           d="M729.114 81.9394C720.546 105.321 740.614 113.526 756.675 128.807C761.434 133.336 761.888 140.817 756.879 145.342C746.107 155.074 705.264 140.917 707.854 153.745C710.53 166.994 745.061 185.531 746.618 186.799C760.284 197.932 764.735 226.174 757.208 241.658C751.852 252.676 716.342 248.962 705.172 245.293C632.024 221.266 664.985 224.131 582.817 216.67C576.527 216.099 569.935 215.806 563.894 217.65C557.671 219.549 557.869 227.339 559.957 231.55C566.876 245.506 597.849 269.178 589.514 287.523C586.956 293.152 580.963 296.707 578.264 302.27C576.151 306.627 576.385 311.772 575.445 316.523"
           stroke="white" stroke-width="2" />
-        <path class='slider-dots__circle slider-dots--1 animate__animated animate__fadeIn animate__delay-4s' fill-rule="evenodd" clip-rule="evenodd"
+        <path class='slider-dots__circle slider-dots--1 animate__animated animate__fadeIn animate__delay-4s'
+          fill-rule="evenodd" clip-rule="evenodd"
           d="M573.5 324C577.09 324 580 321.09 580 317.5C580 313.91 577.09 311 573.5 311C569.91 311 567 313.91 567 317.5C567 321.09 569.91 324 573.5 324Z"
           fill="#4AF6CD" />
         <path class='animate__animated animate__fadeIn animate__delay-5s' fill-rule="evenodd" clip-rule="evenodd"
@@ -65,7 +66,7 @@
             <a href="#"><img src="img/nav-ico-1.svg" alt=""><span>surf</span></a>
           </li>
           <li class="menu__list-item">
-            <a href="#"> <img src="img/nav-ico-2.svg" alt=""><span>Travel</span></a>
+            <a href="#"> <img src="img/nav-ico-2.svg" alt=""><span>sleep</span></a>
           </li>
           <li class="menu__list-item">
             <a href="#"><img src="img/nav-ico-3.svg" alt=""><span>Sleep</span></a>
@@ -357,8 +358,56 @@
         </span>
       </div>
       <div class="travel__slider">
-        <div class="travel__slider-item">
-
+        <div class="travel__slider-item travel-slider">
+          <div class="travel-slider__head" style="background-image: url('img/travel-img.png'); ">
+            <div class="travel-slider-inner">
+              <div class="travel-slider__subtitle">
+                <div class="subtitle">
+                  <div class="headline-left">
+                    Shore
+                  </div>
+                  <div class="subtitle__head">
+                    Airlie Beach <span>|</span> Australia
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="travel-slider__descr" style="background-image: url('img/plane.png');">
+            <div class="descr">
+              <div class="headline-right">
+                Airline
+              </div>
+              <div class="descr__head">
+                Virgin Australia <img src="img/avia-logo.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="travel-slider__info">
+            <div class="travel-slider__info-item">
+              <div class="travel-slider__info-subtitle">Destination</div>
+              <div class="travel-slider__info-title">Queensland Australia</div>
+            </div>
+            <div class="travel-slider__info-item">
+              <div class="travel-slider__info-subtitle">Distance</div>
+              <div class="travel-slider__info-title">7,065 Miles</div>
+            </div>
+            <div class="travel-slider__info-item">
+              <div class="travel-slider__info-subtitle">Travel Time</div>
+              <div class="travel-slider__info-title">23 Hours <br> 5 Minutes</div>
+            </div>
+            <div class="travel-slider__info-item">
+              <div class="travel-slider__info-subtitle">Pricing</div>
+              <div class="travel-slider__info-title">$1,976 USD
+                <span>Round Trip</span>
+              </div>
+            </div>
+          </div>
+          <div class="travel-slider__btn">
+            <a href="#" class="btn">
+              book <span>flight</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -371,6 +420,69 @@
           <h3>sleep</h3>
         </span>
       </div>
+      <div class="sleep__slider">
+        <div class="sleep__slider-item sleep-slider">
+          <div class="sleep-slider__head" style="background-image: url('img/sleep-img.png'); ">
+            <div class="sleep-slider-inner">
+              <div class="sleep-slider__subtitle">
+                <div class="subtitle">
+                  <div class="headline-left">
+                    Resorts
+                  </div>
+                  <div class="subtitle__head">
+                    Auberge <span>|</span> Australia
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sleep-slider__descr" style="background-image: url('img/hammock.png');">
+            <div class="descr">
+              <div class="headline-right">
+                Raiting
+              </div>
+              <div class="descr__head">
+                Excellent <img src="img/stars.svg" alt="stars">
+              </div>
+            </div>
+          </div>
+          <div class="sleep-slider__info">
+            <div class="sleep-slider__info-item">
+              <div class="sleep-slider__info-subtitle">resort</div>
+              <div class="sleep-slider__info-title">Auberge Australia</div>
+            </div>
+            <div class="sleep-slider__info-item">
+              <div class="sleep-slider__info-subtitle"># of Nights</div>
+              <div class="sleep-slider__info-title">
+                <div class="quantity">
+                  <input class="nights" type="number" min="1" max="14" step="1" value="5">
+                </div>
+                Nights
+              </div>
+            </div>
+            <div class="sleep-slider__info-item">
+              <div class="sleep-slider__info-subtitle"># of Guests</div>
+              <div class="sleep-slider__info-title">
+                <div class="quantity">
+                  <input class="guests" type="number" min="1" max="8" step="1" value="3">
+                </div> Guests
+              </div>
+            </div>
+            <div class="sleep-slider__info-item">
+              <div class="sleep-slider__info-subtitle">Pricing</div>
+              <div class="sleep-slider__info-title">
+                <span class="summ" data-nights="55" data-guests="25"></span> USD
+                <span class="sleep-slider__info-suptitle">Per Night</span>
+              </div>
+            </div>
+          </div>
+          <div class="sleep-slider__btn">
+            <a href="#" class="btn">
+              book <span>stay</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -381,6 +493,64 @@
           <h3>shop</h3>
         </span>
       </div>
+      <div class="shop_wrapp">
+        <div class="shop_wrapp-info">
+          <div class="descr">
+            <div class="headline-right">
+              Style
+            </div>
+            <div class="descr__head descr__head-shop">
+              North Nugget TT
+              Surfboard
+            </div>
+          </div>
+          <div class="shop_wrapp-price">
+            <img src="img/stars.svg" alt="stars">
+            <span> $799<sup>99</sup></span>
+          </div>
+          <div class="shop_wrapp-btn">
+            <a href="#" class="btn">
+              drop <span>in</span>
+            </a>
+          </div>
+        </div>
+        <div class="shop_wrapp-content">
+          <div class="surfboard">
+            <img src="img/surfboard.png" alt="surfboard">
+            <div class="surfboard-box">
+              <div class="surfboard-box__circle">
+                <div class="circle-row"></div>
+                <div class="circle-row"></div>
+              </div>
+              <div class="surfboard-box__content">
+                Double Concave with Vee Shape low point
+              </div>
+            </div>
+          </div>
+          <div class="shop_extras">
+            <div class="shop_extras-title">
+              Extras
+            </div>
+            <div class="shop_extras-box">
+              <div class="shop_extras-inner">
+                <div class="shop_extras-img">
+                  <img src="img/wax.png" alt="">
+                </div>
+                <div class="shop_extras-name">sex wax </div>
+                <div class="shop_extras-price">$24.99</div>
+              </div>
+              <div class="shop_extras-inner">
+                <div class="shop_extras-img">
+                  <img src="img/bracelet.png" alt="">
+                </div>
+                <div class="shop_extras-name">Pura Vida</div>
+                <div class="shop_extras-price">$27.99</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   </section>
 
