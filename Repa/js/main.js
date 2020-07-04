@@ -8,7 +8,7 @@ document.body.onload = function() {
             preloader.classList.add('done')
         }
     }, 1000);
-}
+};
 
 
 const burger = document.getElementById('burger'),
@@ -75,10 +75,6 @@ $(document).ready(function(){
 			dots: false,
 			},
 	});
-
-
-
-
 
 });
 	  
