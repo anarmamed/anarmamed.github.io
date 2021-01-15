@@ -22,7 +22,9 @@ ul li { list-style: none; }
 
 html, body { height: 100%; width: 100%; font-size: 100%; line-height: 1; font-size: 14px; font-family: "ProximaNova, sans serif"; }
 
-.container { max-width: 1200px; margin: 0 auto; padding: 0px 20px; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0px 15px; }
+
+.container-full { max-width: 1400px; margin: 0 auto; padding: 0px 15px}
 
 .parallax-window { min-height: 600px; }
 
@@ -60,7 +62,7 @@ html, body { height: 100%; width: 100%; font-size: 100%; line-height: 1; font-si
 
 .header .logo { padding: 5px; }
 
-.header_logo { position: relative; z-index: 3; }
+.header_logo { position: relative; z-index: 3;}
 
 .main { min-height: 100vh; background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(255, 255, 255, 0.1))), url(../img/main_bg.jpg); background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.1)), url(../img/main_bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: bottom center; }
 
@@ -114,9 +116,9 @@ html, body { height: 100%; width: 100%; font-size: 100%; line-height: 1; font-si
 
 .service-title h3 { display: block; font-size: 32px; text-transform: uppercase; padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #000000; }
 
-.service-cards { text-align: center; }
+.service .tap { display: none; font-size: 12px; margin: 10px auto; }
 
-.service-cards span.tap { display: none; font-size: 12px; margin: 10px auto; }
+.service-cards { text-align: center; }
 
 .service-cards .wrap-1 .card-1 { border: none; background-color: #ece7e7; position: relative; -webkit-perspective: 1000px; perspective: 1000px; max-width: 380px; height: 245px; margin-bottom: 20px; }
 
@@ -236,6 +238,20 @@ html, body { height: 100%; width: 100%; font-size: 100%; line-height: 1; font-si
 
 .price-title h3 { display: block; font-size: 32px; text-transform: uppercase; padding-bottom: 10px; margin-bottom: 40px; border-bottom: 1px solid #000000; }
 
+.price-body { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; text-align: center; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.price-item { padding: 20px; }
+
+.price-item h5 { font-size: 22px; margin-bottom: 10px; padding-bottom: 5px; border-bottom: 1px solid #333333; }
+
+.price-item p { font-size: 18px; margin-bottom: 20px; }
+
+.price-item span { display: block; margin-bottom: 20px; background: #333333; -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); font-size: 42px; font-weight: 800; color: #ffc61a; border-radius: 10px; padding: 15px; min-width: 150px; }
+
+.price-descr p { text-align: center; font-size: 18px; color: #333333; margin-top: 40px; }
+
+.price-descr p a { display: inline-block; background: #333333; -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); color: #ffc61a; font-weight: 800; padding: 15px; border-radius: 10px; margin-top: 15px; }
+
 .testimonials { padding: 40px 0; }
 
 .testimonials-title { text-align: center; }
@@ -285,10 +301,11 @@ html, body { height: 100%; width: 100%; font-size: 100%; line-height: 1; font-si
 .booking_form .form-control { width: 200px; height: 25px; margin-bottom: 15px; }
 
 .booking_form .form-input { width: 200px; height: 25px; margin-bottom: 15px; }
+.booking_form .form-input:invalid{box-shadow:none;}
 
 .booking_form .message { width: 200px; margin: 20px 0; }
 
-.booking_form .btn { color: #ffffff; padding: 10px; margin-top: 20px; width: 200px; border-radius: 5px; background: #ffc61a; background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, #ff9d0a), color-stop(70%, #ffc61a)); background: linear-gradient(0deg, #ff9d0a 30%, #ffc61a 70%); -webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75); box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75); cursor: pointer; }
+.booking_form .btn { color: #ffffff; padding: 10px; margin-top: 20px; font-size: 18px; width: 200px; border-radius: 5px; background: #ffc61a; background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, #ff9d0a), color-stop(70%, #ffc61a)); background: linear-gradient(0deg, #ff9d0a 30%, #ffc61a 70%); -webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75); box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75); cursor: pointer; }
 
 .footer { background-color: #000000; color: #fff; }
 
@@ -315,8 +332,13 @@ html, body { height: 100%; width: 100%; font-size: 100%; line-height: 1; font-si
   .about_body-slider img { max-width: 100%; }
   .booking_text { width: 500px; } }
 
+
+@media screen and (min-width: 992px) {
+  .header_logo img { max-width: 40%; }
+}
+
 @media screen and (max-width: 992px) { body.lock { overflow: hidden; }
-  .header_logo img { width: 200px; }
+  .header_logo img { width: 240px; }
   .header-title { text-align: center; }
   .header-title h1 { font-size: 36px; font-family: "ProximaNova_Bold, sans serif"; color: #fff; padding-top: 130px; }
   .header-title span { color: #ffc61a; text-transform: none; font-size: 36px; }
@@ -339,14 +361,16 @@ html, body { height: 100%; width: 100%; font-size: 100%; line-height: 1; font-si
   .about_body { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
   .about_body-car { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; width: 600px; }
   .about_body-slider { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; width: 600px; }
-  .booking_body { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; } }
+  .booking_body { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+  .main_title h1 {font-size: 34px;}
+  .main_title h2 {font-size: 28px; font-weight: bold;} }
 
 @media screen and (max-width: 767px) { .contact-bar { padding: 0 15px; }
   .contact-bar .contact-links { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
   .contact-bar .contact-links li.tel, .contact-bar .contact-links li.email { display: none; }
   .contact-bar .contact-links li.phone { font-size: 16px; margin: 0; }
   .main { background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(255, 255, 255, 0.1))), url(../img/bg_mini.jpg); background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.1)), url(../img/bg_mini.jpg); background-repeat: no-repeat; background-size: cover; background-position: center bottom; }
-  .main_wrapper { height: 50vh; }
+  .main_wrapper { height: 70vh; }
   .main_title { text-align: center; }
   .main_title h1 { font-size: 28px; line-height: 34px; }
   .main_title h2 { font-size: 24px; line-height: 34px; }
@@ -354,7 +378,7 @@ html, body { height: 100%; width: 100%; font-size: 100%; line-height: 1; font-si
   .about_body { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
   .about_body-car { width: 550px; }
   .about_body-slider { width: 550px; }
-  .service-cards span.tap { display: block; }
+  .service .tap { display: inline-block; }
   .features { padding-bottom: 40px; }
   .features-body { display: none; }
   .features-slider { display: block; position: relative; padding: 0 30px; }
@@ -370,15 +394,15 @@ html, body { height: 100%; width: 100%; font-size: 100%; line-height: 1; font-si
   .header-title a.button { font-size: 14px; font-weight: 300; }
   .main_wrapper { height: 50vh; }
   .main_title { text-align: center; }
-  .main_title h1 { font-size: 24px; line-height: 34px; }
-  .main_title h2 { font-size: 20px; line-height: 30px; margin-bottom: 20px; }
+  .main_title h1 { font-size: 30px; line-height: 38px; }
+  .main_title h2 { font-size: 22px; font-weight: 800; line-height: 30px; margin-bottom: 20px; }
   .about { padding: 20px 0; }
-  .about_title { padding: 20px 10px; }
-  .about_title h3 { font-size: 18px; }
+  .about_title { padding: 20px; }
+  .about_title h3 { font-size: 18px; font-weight: 800; }
   .about_title p { font-size: 16px; line-height: 22px; }
   .about_body { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
   .about_body-car { width: 350px; }
-  .about_body-car h4 { font-size: 16px; }
+  .about_body-car h4 { font-size: 20px; }
   .about_body-slider { width: 350px; }
   .booking_title { margin-bottom: 20px; }
   .booking_title h3 { font-size: 20px; }
