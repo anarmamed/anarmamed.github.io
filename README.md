@@ -1,6 +1,6 @@
 
 
-# Personal projects on HTML & CSS
+# Personal projects on HTML / CSS / JS
  
 
 
