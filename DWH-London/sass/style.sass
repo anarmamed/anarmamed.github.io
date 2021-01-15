@@ -1,0 +1,1085 @@
+@font-face
+	font-family: "ProximaNova, sans serif"
+	src: url(../fonts/ProximaNova-Reg.otf)
+@font-face
+	font-family: "ProximaNova_Bold, sans serif"
+	src: url(../fonts/ProximaNova-Bold.otf)
+	font-weight: bold
+	
+$orange: #ffc61a
+$grey: #ece7e7
+
+/*Обнуление*/
+*
+	padding: 0
+	margin: 0
+	border: 0
+
+*,*:before,*:after
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+
+a:focus,a:active
+	outline: none
+a, a:visited, a:hover
+	text-decoration: none
+a 
+	color: #ffffff
+
+nav,footer,header,aside
+  display: block
+
+button
+  cursor: pointer
+  padding: 0
+  border: 0
+
+ul li
+  list-style: none
+
+html, body
+	height: 100%
+	width: 100%
+	font-size: 100%
+	line-height: 1
+	font-size: 14px
+	font-family: "ProximaNova, sans serif"
+
+.container
+	max-width: 1200px
+	margin: 0 auto
+	padding: 0px 20px
+
+.parallax-window 
+	min-height: 600px
+
+.anchor 
+    display: block
+    content: ""
+    height: 60px
+    margin: -60px 0 0
+
+// -------------------------------------CONTCAT-BAR------------------------
+
+.contact-bar	
+	display: flex
+	align-items: center
+	justify-content: center
+	position: fixed
+	top: 0
+	right: 0
+	left: 0
+	width: 100%
+	margin: 0 auto
+	padding: 0px 40px
+	background: #141414be
+	z-index: 999
+	.contact-links
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: 5px 0
+		li 
+			margin-right: 40px
+		a
+			.icon 
+				font-size: 16px
+				color: $orange
+		a:hover
+			color: $orange
+
+
+// -------------------------------------HEADER-----------------------
+
+.header
+	position: relative
+	width: 100%
+	top: 0
+	left: 0
+	z-index: 99
+	&:before 
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: #333333
+		z-index: 2
+	&_body 
+		position: relative
+		display: flex
+		justify-content: space-between
+		align-items: center
+		width: 100%
+		margin: 0 auto
+		padding-top: 27px
+	&_list
+		display: flex
+		position: relative
+		z-index: 2
+		li 
+			margin-left: 25px	
+			a 
+			&::after
+				content: ''
+				display: block
+				width: 100%
+				height: 2px
+				background: $orange
+				transform: translateY(5px) scale(0)
+				transition: all 0.2s
+			&:hover
+				&::after
+					transform: translateY(5px) scale(1)
+			a:hover
+				color: $orange
+	&_link
+		color: #ffffff
+		font-size: 16px
+	&_burger 
+		display: none
+	.logo 
+		padding: 5px
+	&_logo 
+		position: relative
+		z-index: 3
+		
+
+// ------------------------------------------MAIN----------------------------
+
+.main 
+	min-height: 100vh
+	background: linear-gradient(  rgba(0, 0, 0, 0.4) ,rgba(255, 255, 255, 0.1) ), url(../img/main_bg.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: bottom center
+	&_wrapper
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		height: 70vh
+	&_title
+		text-align: right
+		color: #ffffff
+		line-height: 60px
+		h1
+			display: inline-block
+			text-transform: uppercase
+			font-size: 50px
+			font-weight: bold
+			line-height: 60px
+			border-bottom: 1px solid $orange
+			margin-bottom: 0
+		h2
+			font-size: 30px
+			font-weight: normal
+			line-height: 40px
+			margin-bottom: 40px
+		.main_btn 
+			display: flex
+			justify-content: center
+			align-items: center
+			text-decoration: none
+			width: 180px
+			height: 50px
+			color: #ffffff
+			font-size: 20px
+			padding: 20px
+			margin-left: auto
+			background-color: $orange
+			background: linear-gradient(0deg,  #ff9d0a 30%, $orange 70%)
+			box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75)
+			position: relative
+			border: none
+			border-radius: 5px
+			overflow: hidden
+			&::before
+				position: absolute
+				content: ''
+				top: 0
+				left: 0
+				width: 1.5em
+				height: 100%
+				background-color: rgba(#fff, 0.6)
+				transform: translateX(-4em) skewX(-45deg)
+			&:hover
+				&:before
+						animation: move-light 1s infinite
+		@keyframes move-light
+			from
+				transform: translateX(-4em) skewX(-45deg)
+			to 
+				transform: translateX(10em) skewX(-45deg)
+			
+			
+//------------------------------------------ABOUT--------------------------
+
+.about
+	padding: 40px 0
+	&_title
+		padding: 20px
+		margin-bottom: 40px
+		box-shadow: 0px 0px 8px #333333
+		h3
+			color: #333333 
+			text-align: center
+			font-size: 28px
+			margin-bottom: 10px
+			border-bottom: 1px solid #ccc
+		p 
+			text-align: center
+			font-size: 18px
+			line-height: 24px
+			font-weight: 300	
+	&_body
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+		&-car 
+			width: 500px
+			h4 
+				text-align: center
+				font-size: 18px
+				border-bottom: 1px solid #cccccc
+				margin-bottom: 20px
+			p	
+				padding: 5px
+				font-size: 16px
+				line-height: 20px
+			.about_btn 
+				text-align: center
+				margin: 40px auto
+				a.car_btn
+					text-decoration: none
+					color: #ffffff
+					font-size: 16px
+					padding: 10px 20px
+					border-radius: 5px
+					background: $orange
+					background: linear-gradient(0deg,  #ff9d0a 30%, $orange 70%)
+					box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75)
+		&-slider 
+			width: 600px
+			margin-bottom: 20px
+			img
+				max-width: 100%
+
+// -------------------------------------------------SERVICES-----------------------
+
+.service
+	background-color: $grey
+	padding: 30px 0
+	&-title
+		text-align: center
+		padding: 20px 0
+		h3
+			display: block
+			font-size: 32px
+			text-transform: uppercase
+			padding-bottom: 10px
+			margin-bottom: 10px
+			border-bottom: 1px solid #000000
+	&-cards
+		text-align: center
+		span.tap 
+			display: none
+			font-size: 12px
+			margin: 10px auto
+		.wrap-1
+			.card-1
+				border: none
+				background-color: $grey
+				position: relative
+				perspective: 1000px
+				max-width: 380px
+				height: 245px
+				margin-bottom: 20px
+				.front-1, .back-1
+					color: #ffffff
+					position: absolute
+					width: 100%
+					height: 100%
+					top: 0
+					left: 0
+					display: flex
+					justify-content: center
+					align-items: center
+					transition: 1s
+					backface-visibility: hidden
+				.front-1
+					background: url(../img/LaptopMan.jpg) center no-repeat
+					span
+						display: inline-block
+						width: 100%
+						font-size: 30px
+						padding: 10px 20px
+						margin-top: 140px
+						background-color: rgba(216, 216, 216, 0.4)	
+				.back-1
+					background-color: #333333
+					transform: rotateY(180deg)
+					p
+						padding: 5px
+						font-size: 16px
+						line-height: 22px
+						color: #fff
+			.card-1:hover
+				.front-1
+					transform: rotateY(180deg)
+				.back-1
+					transform: rotateY(360deg)
+		.wrap-2
+			.card-2
+				border: none
+				background-color: $grey
+				position: relative
+				perspective: 1000px
+				max-width: 380px
+				height: 245px
+				margin-bottom: 20px
+				.front-2, .back-2
+					color: #ffffff
+					position: absolute
+					width: 100%
+					height: 100%
+					top: 0
+					left: 0
+					display: flex
+					justify-content: center
+					align-items: center
+					transition: 1s
+					backface-visibility: hidden
+				.front-2
+					background: url(../img/chauffeur-prive.jpg) center no-repeat
+					span
+						display: inline-block
+						width: 100%
+						font-size: 30px
+						padding: 10px 20px
+						margin-top: 140px
+						background-color: rgba(216, 216, 216, 0.4)
+				.back-2
+					background-color: #333333
+					transform: rotateY(180deg)
+					p
+						padding: 5px
+						font-size: 16px
+						line-height: 22px
+						color: #fff
+			.card-2:hover
+				.front-2
+					transform: rotateY(180deg)
+				.back-2
+					transform: rotateY(360deg)
+		.wrap-3
+			.card-3
+				border: none
+				background-color: $grey
+				position: relative
+				perspective: 1000px
+				max-width: 380px
+				height: 245px
+				margin-bottom: 20px
+				.front-3, .back-3
+					color: #ffffff
+					position: absolute
+					width: 100%
+					height: 100%
+					top: 0
+					left: 0
+					display: flex
+					justify-content: center
+					align-items: center
+					transition: 1s
+					backface-visibility: hidden
+				.front-3
+					background: url(../img/Cafe.jpg) center no-repeat
+					span
+						display: inline-block
+						width: 100%
+						font-size: 30px
+						padding: 10px 20px
+						margin-top: 140px
+						background-color: rgba(216, 216, 216, 0.4)
+				.back-3
+					background-color: #333333
+					transform: rotateY(180deg)
+					p
+						padding: 5px
+						font-size: 16px
+						line-height: 22px
+						color: #fff
+			.card-3:hover
+				.front-3
+					transform: rotateY(180deg)
+				.back-3
+					transform: rotateY(360deg)
+		.wrap-4
+			.card-4
+				border: none
+				background-color: $grey
+				position: relative
+				perspective: 1000px
+				max-width: 380px
+				height: 245px
+				margin-bottom: 20px
+				.front-4, .back-4
+					color: #ffffff
+					position: absolute
+					width: 100%
+					height: 100%
+					top: 0
+					left: 0
+					display: flex
+					justify-content: center
+					align-items: center
+					transition: 1s
+					backface-visibility: hidden
+				.front-4
+					background: url(../img/shoping.jpg) 
+					span
+						display: inline-block
+						width: 100%
+						font-size: 30px
+						padding: 10px 20px
+						margin-top: 140px
+						background-color: rgba(216, 216, 216, 0.4)
+				.back-4
+					background-color: #333333
+					transform: rotateY(180deg)
+					p
+						padding: 5px
+						font-size: 16px
+						line-height: 22px
+						color: #fff
+			.card-4:hover
+				.front-4
+					transform: rotateY(180deg)
+				.back-4
+					transform: rotateY(360deg)
+		.wrap-5
+			.card-5
+				border: none
+				background-color: $grey
+				position: relative
+				perspective: 1000px
+				max-width: 380px
+				height: 245px
+				margin-bottom: 20px
+				.front-5, .back-5
+					color: #ffffff
+					position: absolute
+					width: 100%
+					height: 100%
+					top: 0
+					left: 0
+					display: flex
+					justify-content: center
+					align-items: center
+					transition: 1s
+					backface-visibility: hidden
+				.front-5
+					background: url(../img/excurs.jpg) center no-repeat
+					span
+						display: inline-block
+						width: 100%
+						font-size: 30px
+						padding: 10px 20px
+						margin-top: 140px
+						background-color: rgba(216, 216, 216, 0.4)
+				.back-5
+					background-color: #333333
+					transform: rotateY(180deg)
+					p
+						padding: 5px
+						font-size: 16px
+						line-height: 22px
+						color: #fff
+			.card-5:hover
+				.front-5
+					transform: rotateY(180deg)
+				.back-5
+					transform: rotateY(360deg)
+		.wrap-6
+			.card-6
+				border: none
+				background-color: $grey
+				position: relative
+				perspective: 1000px
+				max-width: 380px
+				height: 245px
+				margin-bottom: 20px
+				.front-6, .back-6
+					color: #ffffff
+					position: absolute
+					width: 100%
+					height: 100%
+					top: 0
+					left: 0
+					display: flex
+					justify-content: center
+					align-items: center
+					transition: 1s
+					backface-visibility: hidden
+				.front-6
+					background: url(../img/wedding.jpg) center no-repeat 
+					span
+						display: inline-block
+						width: 100%
+						font-size: 30px
+						padding: 10px 20px
+						margin-top: 140px
+						background-color: rgba(216, 216, 216, 0.4)
+				.back-6
+					background-color: #333333
+					transform: rotateY(180deg)
+					p
+						padding: 5px
+						font-size: 16px
+						line-height: 22px
+						color: #fff
+			.card-6:hover
+				.front-6
+					transform: rotateY(180deg)
+				.back-6
+					transform: rotateY(360deg)
+
+
+
+// ----------------------------------------------FEATURES----------------------
+	
+.features
+	padding: 40px 0
+	&-title
+		h3
+			text-align: center
+			color: #000
+			padding-bottom: 10px
+			font-size: 32px
+			text-transform: uppercase
+			border-bottom: 1px solid #000
+			margin-bottom: 40px
+	&-body
+		display: flex
+		justify-content: space-around
+		align-items: center
+		flex-wrap: wrap
+	&-card
+		display: block
+		text-align: center
+		width: 300px
+		img
+			width: 60px
+			height: 60px
+			margin: 20px auto
+		h5
+			font-size: 18px
+		p 
+			font-size: 14px
+			line-height: 18px
+			padding: 10px 20px
+	&-slider 
+		display: none		
+		
+			
+
+// ----------------------------------------PRICE--------------------
+.price 
+	min-height: 300px
+	background-color: $grey
+	padding: 40px 0
+	&-title
+		text-align: center
+		padding: 20px 0
+		h3
+			display: block
+			font-size: 32px
+			text-transform: uppercase
+			padding-bottom: 10px
+			margin-bottom: 40px
+			border-bottom: 1px solid #000000
+
+//----------------------------------------------TESTIMONIALS---------------------- 
+
+.testimonials
+	padding: 40px 0
+	&-title
+		text-align: center
+		h3 
+			font-size: 32px 
+			text-transform: uppercase
+			padding-bottom: 10px
+			margin-bottom: 40px
+			border-bottom: 1px solid #000
+	&-body 
+	&-text 
+		text-align: center
+		font-size: 16px
+		line-height: 24px
+		background-color: #fff
+		margin: 20px
+		.fas 
+			font-size: 22px
+			color: $orange
+			margin-right: 10px
+		h5 
+			font-size: 16px
+			border-bottom: 1px solid #ccc
+			padding-bottom: 5px
+			margin-bottom: 20px
+		span 
+			display: inline-block
+			font-size: 12px	
+			margin-top: 20px
+	.testimonial-slider
+		position: relative	
+		padding: 0 30px
+		.slick-arrow
+			position: absolute
+			top: 50%
+			z-index: 9
+			width: 30px
+			height: 40px
+			margin-top: -20px
+		.slick-prev 
+			left: 0
+			font-size: 0
+			background: url('../img/arrowLeft.svg') center center no-repeat
+		.slick-next 
+			right: 0
+			font-size: 0
+			background: url('../img/arrowRight.svg') center center no-repeat
+	
+
+
+
+//---------------------------------------- FORM--------------------
+
+.booking 
+	background-image: url("../img/bg_parallax.jpg")
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center 
+	padding: 60px 0
+	&_title
+		text-align: center
+		h3
+			color: #fff
+			font-size: 30px
+			font-weight: bold
+			text-transform: uppercase
+			border-bottom: 1px solid #ffffff
+			margin-bottom: 40px
+	&_body 
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap		
+	&_text
+		text-align: center
+		width: 650px 
+		color: #ffffff
+		font-size: 18px
+		line-height: 30px
+		padding: 30px 
+		margin-bottom: 20px
+		background-color: rgba(0, 0, 0, 0.2)
+		h5 
+			text-align: center
+			display: inline-block
+			font-size: 24px
+			color: $orange
+			margin-bottom: 20px 
+			border-bottom: 1px solid #fff
+		a 
+			color: $orange
+			font-size: 20px
+			cursor: pointer
+		p 
+			margin-bottom: 15px
+	&_form
+		display: flex
+		flex-direction: column
+		align-items: center
+		flex-wrap: wrap
+		width: 350px
+		padding: 20px
+		background-color: rgba(0, 0, 0, 0.2)
+		.form-block
+			display: flex
+			justify-content: space-between
+			flex-direction: column
+			align-items: center
+			flex-wrap: wrap
+		h5 
+			font-size: 24px
+			color: $orange
+			margin-bottom: 20px 
+			border-bottom: 1px solid #fff
+		label 
+			color: #ffffff
+			margin-bottom: 5px	
+		.form-control
+			width: 200px
+			height: 25px
+			margin-bottom: 15px
+		.form-input 
+			width: 200px
+			height: 25px
+			margin-bottom: 15px
+		.message 
+			width: 200px
+			margin: 20px 0	
+		.btn
+			color: #ffffff
+			padding: 10px
+			margin-top: 20px
+			width: 200px
+			border-radius: 5px
+			background: $orange
+			background: linear-gradient(0deg,  #ff9d0a 30%, $orange 70%)
+			box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75)
+			cursor: pointer
+	
+
+
+.footer
+	background-color: #000000
+	color: #fff	
+	.social-links
+		display: flex
+		justify-content: center
+		align-items: center
+		padding-top: 30px 
+		margin-bottom: 30px
+		span 
+			display: block
+			font-size: 12px
+			text-align: right
+		li
+			display: flex
+			justify-content: center
+			align-items: center
+			list-style: none
+			margin-right: 20px
+			a
+				text-decoration: none
+				color: #ffffff
+				.fab, .fas:before
+					font-size: 28px
+				&:hover
+					color: $orange
+	.info
+		text-align: center
+		p
+			display: block
+			
+
+		span 
+			font-size: 10px
+			display: block
+			padding: 10px 0
+			line-height: 14px
+
+					
+@media screen and ( max-width: 1200px )
+	
+	.about_body-car 
+		width: 400px
+	.about_body-slider 
+		width: 550px
+		img
+			max-width: 100%
+
+	.booking_text
+		width: 500px
+
+@media screen and ( max-width: 992px )
+
+	body.lock
+		overflow: hidden
+
+	.header
+		&_logo img
+			width: 200px
+		&-title
+			text-align: center
+			h1
+				font-size: 36px
+				font-family: "ProximaNova_Bold, sans serif"
+				color: #fff
+				padding-top: 130px
+			span
+				color: $orange
+				text-transform: none
+				font-size: 36px
+		&-text
+			p
+				color: #fff
+				font-size: 20px
+				font-family: "ProximaNova, sans serif"
+		a.button 
+			display: flex
+			justify-content: center
+			align-items: center
+			text-decoration: none
+			margin: 20px auto
+			padding: 10px
+			width: 150px
+			height: 40px
+			background-color: #e4b015
+			border: none
+			border-radius: 5px
+			color: #ffffff
+			font-size: 16px
+			font-family: "ProximaNova, sans serif"
+			font-weight: normal
+			text-transform: uppercase
+			&:hover
+				background-color: $orange
+
+	.header_burger 
+		display: block
+		position: relative
+		width: 30px
+		height: 20px
+		z-index: 3
+		span 
+			position: absolute
+			width: 100%
+			height: 2px
+			left: 0
+			top: 9px
+			background-color: #ffffff
+			transition: all 0.3s ease 0s 
+		&::before
+			content: ''
+			position: absolute
+			width: 100%
+			height: 2px
+			left: 0
+			top: 0
+			background-color: #ffffff
+			transition: all 0.3s ease 0s 
+		&:after 
+			content: ''
+			position: absolute
+			width: 100%
+			height: 2px
+			left: 0
+			bottom: 0
+			background-color: #ffffff
+			transition: all 0.3s ease 0s 
+		&.active span
+			transform: scale(0)
+		&.active:before 
+			transform: rotate(45deg)
+			top: 9px
+		&.active:after 
+			transform: rotate(-45deg)
+			bottom: 9px
+
+	.header_menu 
+		position: fixed
+		width: 100%
+		height: 100%
+		top: -100%
+		left: 0
+		overflow: auto
+		background-color: rgba(0,0,0,.8)
+		padding-top: 100px
+		padding-bottom: 10px
+		text-align: center
+		transition: all 0.5s ease 0s 
+		&.active 
+			top: 0
+	
+	.header_list 
+		display: block	
+		li 
+			margin: 0 0 30px 0
+
+	.header_link
+		font-size: 18px
+
+
+	.header_list
+		 li::after
+			 display: none
+	
+
+	.about_body
+		justify-content: center
+		&-car 
+			order: 2
+			width: 600px
+		&-slider
+			order: 1
+			width: 600px	
+	
+
+	.booking_body 
+		justify-content: center
+	
+	
+
+
+@media screen and ( max-width: 767px )
+
+	.contact-bar
+		padding: 0 15px
+		.contact-links
+			flex-direction: column
+			justify-content: center
+			li.tel, li.email
+				display: none
+			li.phone 
+				font-size: 16px	
+				margin: 0
+
+
+	.main 
+		background: linear-gradient(rgba(0, 0, 0, 0.6) ,rgba(255, 255, 255, 0.1) ), url(../img/bg_mini.jpg)
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center bottom
+		&_wrapper
+			height: 50vh
+		&_title
+			text-align: center
+			h1 
+				font-size: 28px
+				line-height: 34px
+			h2 
+				font-size: 24px
+				line-height: 34px
+			.main_btn 
+				margin: 0 auto
+
+	.about_body
+		justify-content: center
+		&-car 
+			width: 550px
+		&-slider
+			width: 550px
+	
+
+	.service-cards
+		span.tap 
+			display: block
+
+
+	.features
+		padding-bottom: 40px 
+	.features-body 
+		display: none
+	.features-slider
+		display: block
+		position: relative	
+		padding: 0 30px
+		.slick-arrow
+			position: absolute
+			top: 50%
+			z-index: 9
+			width: 30px
+			height: 40px
+			margin-top: -20px
+		.slick-prev 
+			left: 0
+			font-size: 0
+			background: url('../img/arrowLeft.svg') center center no-repeat
+		.slick-next 
+			right: 0
+			font-size: 0
+			background: url('../img/arrowRight.svg') center center no-repeat
+	.features-card 
+		margin-bottom: 10px
+		box-shadow: none
+		background-color: #ffffff
+
+
+	.booking 
+			background-image: url("../img/mob_form.jpg")
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: center
+
+
+@media screen and ( max-width: 576px )
+
+	.header-title
+		h1
+			font-size: 30px
+			color: #fff
+			padding-top: 80px
+			margin-bottom: 15px
+		h2 
+			font-size: 16px
+			margin: 0	
+		span
+			color: $orange
+			text-transform: none
+			font-size: 30px
+		a.button 
+			font-size: 14px
+			font-weight: 300
+
+	.main_wrapper
+		height: 50vh
+
+	.main_title
+		text-align: center
+		h1 
+			font-size: 24px
+			line-height: 34px
+		h2 
+			font-size: 20px
+			line-height: 30px
+			margin-bottom: 20px
+	
+
+	.about 
+		padding: 20px 0
+		&_title 
+			padding: 20px 10px
+			h3
+				font-size: 18px
+			p 
+				font-size: 16px	
+				line-height: 22px			
+		&_body
+			justify-content: center
+			&-car 
+				width: 350px
+				h4 
+					font-size: 16px
+			&-slider
+				width: 350px
+
+
+	.booking 
+		&_title 
+			margin-bottom: 20px
+			h3 
+				font-size: 20px
+		&_text
+			text-align: center
+			color: #fff 
+			p
+				font-size: 16px
+				line-height: 22px
+
+	
+		
+@media screen and ( max-width: 350px )	
+
+	.about 
+		&_body
+			justify-content: center
+			&-car 
+				width: 300px
+			&-slider
+				width: 300px
+				padding: 5px
