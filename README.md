@@ -1,7 +1,7 @@
 
 
-# Anar Mamedov
- My personal projects
+# Personal projects on HTML & CSS
+ 
 
 
 
